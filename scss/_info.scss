@@ -1,0 +1,17 @@
+.pink {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink,
+.blue {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
