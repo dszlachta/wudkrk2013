@@ -2,25 +2,34 @@
   background-color: white;
   height: 88px;
   border-bottom: 1px solid #e5e5e5; }
-  .navbar a {
-    padding: 6px 13px !important;
-    font-size: 14px;
-    font-weight: bold; }
-  .navbar a[href*=mailto] {
-    color: #fe6521; }
   .navbar .navbar-brand img {
     height: 45px;
-    margin: 21.5px 0; }
+    margin: 21.5px 0;
+    margin-right: 20px; }
 
-.navbar-default .navbar-nav > li > a {
-  color: black; }
-  .navbar-default .navbar-nav > li > a:hover {
+.navbar-brand {
+  padding: 0 !important; }
+
+.navbar-nav a {
+  margin: 29px 20px;
+  padding: 6px 12px !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+.navbar-nav a.contact {
+  color: #fe6521 !important;
+  text-transform: none;
+  font-weight: normal; }
+
+.navbar-left a {
+  color: black !important; }
+  .navbar-left a:hover {
     background-color: #fe6521;
     color: white; }
 
 #info h1 {
   width: 407px;
-  font-size: 25px;
+  font-size: 40px;
   color: white;
   font-weight: bold; }
 #info .line {
@@ -31,11 +40,29 @@
   background-color: #009dd9; }
 #info .pink,
 #info .blue {
-  height: 48px;
-  margin: 6px 4.5px; }
-  #info .pink:last-child,
-  #info .blue:last-child {
-    margin: 6px 9px 6px 0; }
+  height: 48px; }
+
+#info .logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white; }
+  #info .logo .line {
+    display: block; }
+  #info .logo .line:nth-child(2) {
+    margin-top: 6px; }
+  #info .logo .line div {
+    display: inline-block;
+    text-align: center; }
+  #info .logo .wud {
+    width: 407px; }
+  #info .logo .cross {
+    width: 52px;
+    vertical-align: top;
+    margint-top: 6px; }
+  #info .logo .when {
+    width: 204px; }
+  #info .logo .where {
+    width: 134px; }
 
 body {
   background-color: white; }
@@ -45,3 +72,6 @@ body, h1, h2 {
 
 a {
   color: #fe6521; }
+
+main {
+  margin-top: 89px; }

@@ -2,7 +2,7 @@
 
   h1 {
     width: 407px;
-    font-size: 25px;
+    font-size: 40px;
     color: white;
     font-weight: bold;
   }
@@ -23,11 +23,51 @@
   .blue {
     height: 48px;
 
-    margin: 6px 4.5px;
+    //margin: 6px 4.5px;
+    //width: 100%;
 
     &:last-child {
-      margin: 6px 9px 6px 0;
+      //margin: 6px 9px 6px 0;
     }
+  }
+
+}
+
+#info .logo {
+
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+
+  .line {
+    display: block;
+  }
+
+  .line:nth-child(2) {
+    margin-top: 6px;
+  }
+
+  .line div {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .wud {
+    width: 407px;
+  }
+
+  .cross {
+    width: 52px;
+    vertical-align: top;
+    margint-top: 6px;
+  }
+
+  .when {
+    width: 204px;
+  }
+
+  .where {
+    width: 134px;
   }
 
 }
