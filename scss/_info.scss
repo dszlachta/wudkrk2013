@@ -1,17 +1,33 @@
-.pink {
-  background-color: red;
-}
+#info {
 
-.blue {
-  background-color: blue;
-}
-
-.pink,
-.blue {
-  margin-right: 5px;
-
-  &:last-child {
-    margin-right: 0;
+  h1 {
+    width: 407px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
   }
-}
 
+  .line {
+    display: block;
+  }
+
+  .pink {
+    background-color: $wud_pink;
+  }
+
+  .blue {
+    background-color: $wud_blue;
+  }
+
+  .pink,
+  .blue {
+    height: 48px;
+
+    margin: 6px 4.5px;
+
+    &:last-child {
+      margin: 6px 9px 6px 0;
+    }
+  }
+
+}

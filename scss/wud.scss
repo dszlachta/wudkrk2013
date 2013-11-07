@@ -1,6 +1,15 @@
+@import "vars";
 @import "nav";
 @import "info";
 
 body {
   background-color: white;
+}
+
+body, h1, h2 {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
+a {
+    color: $wud_orange;
 }
