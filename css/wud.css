@@ -181,6 +181,19 @@
   top: 219px;
   left: 641px; }
 
+#sponsorzy .sponsors-list {
+  padding: 16px 12px;
+  border-top: 1px solid #e5e5e5; }
+  #sponsorzy .sponsors-list h2 {
+    margin-top: 0px; }
+  #sponsorzy .sponsors-list ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  #sponsorzy .sponsors-list ul li {
+    display: inline; }
+
 body {
   background-color: white; }
 
@@ -189,6 +202,9 @@ body, h1, h2 {
 
 a {
   color: #fe6521; }
+
+h1, h2 {
+  font-weight: bold; }
 
 main {
   margin-top: 89px; }
@@ -200,7 +216,7 @@ section {
     height: 70px;
     color: white;
     text-align: center;
-    font-weight: bold;
+    margin: 140px 0 30px 0;
     background-image: url(../assets/header-left.png), url(../assets/header-right.png);
     background-position: left top, right top;
     background-repeat: no-repeat; }

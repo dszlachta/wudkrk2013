@@ -1,0 +1,24 @@
+#sponsorzy {
+
+  .sponsors-list {
+    padding: 16px 12px;
+
+    border-top: 1px solid $nav_border;
+
+    h2 {
+      margin-top: 0px;
+    }
+
+    ul {
+      text-align: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline;
+    }
+  }
+
+}
