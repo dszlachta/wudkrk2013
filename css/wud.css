@@ -40,22 +40,29 @@
   border-left: 1px solid #e5e5e5; }
 
 #info > div:first-child {
-  background-image: url(../assets/wawel.png);
-  background-position-x: 42%;
   background-repeat: repeat-x;
-  margin-bottom: 55px;
+  background-position-x: 42%;
   border-bottom: 1px solid #e5e5e5; }
+  @media (min-width: 768px) {
+    #info > div:first-child {
+      margin-bottom: 55px;
+      background-image: url(../assets/wawel.png); } }
 #info > div:nth-child(2) {
   background-color: white;
   margin: 55px 0; }
 #info .banner {
   position: relative;
-  height: 468px;
-  width: 861px;
   margin: auto;
-  background-image: url(../assets/kompozycja1.png);
   background-repeat: no-repeat;
-  background-position: 123px 73px; }
+  width: 375px;
+  height: 150px;
+  background-image: url(../assets/mobile/kompozycja-375.png); }
+  @media (min-width: 768px) {
+    #info .banner {
+      height: 468px;
+      width: 861px;
+      background-image: url(../assets/kompozycja1.png);
+      background-position: 123px 73px; } }
 #info h1 {
   font-size: 18px;
   font-weight: normal;
@@ -72,13 +79,15 @@
 #info .pink,
 #info .blue {
   height: 48px; }
-
 #info .logo {
-  position: absolute;
-  top: 240px;
   font-size: 35px;
   font-weight: bold;
-  color: white; }
+  color: white;
+  top: 0px; }
+  @media (min-width: 768px) {
+    #info .logo {
+      position: absolute;
+      top: 240px; } }
   #info .logo .line {
     display: block; }
   #info .logo .line:nth-child(2) {
@@ -99,11 +108,16 @@
     width: 134px; }
 
 #info aside {
-  position: absolute;
-  top: 300px;
-  right: 0px;
   font-weight: bold;
-  text-align: right; }
+  text-align: center;
+  margin-bottom: 55px; }
+  @media (min-width: 768px) {
+    #info aside {
+      position: absolute;
+      top: 300px;
+      right: 0px;
+      text-align: right;
+      margin-bottom: 0; } }
   #info aside p {
     margin: 0; }
   #info aside p:first-child {
@@ -128,40 +142,94 @@
   position: relative;
   margin: auto; }
 #miejsce .map-wrapper, #miejsce .map {
-  width: 863px; }
+  width: 380px; }
+  @media (min-width: 768px) {
+    #miejsce .map-wrapper, #miejsce .map {
+      width: 863px; } }
 #miejsce .map {
-  height: 487px;
-  background-image: url(../assets/stadion.png);
+  height: 214px;
   background-repeat: no-repeat;
-  z-index: 1; }
+  margin: 0 0 52px 0;
+  background-image: url(../assets/mobile/stadion-380.png); }
+  @media (min-width: 768px) {
+    #miejsce .map {
+      height: 487px;
+      background-image: url(../assets/stadion.png);
+      z-index: 1; } }
 #miejsce .marker {
   width: 66px;
   height: 104px;
   z-index: 10;
-  position: absolute; }
-#miejsce .marker {
+  position: absolute;
   background-repeat: no-repeat; }
+#miejsce .bus-stop .marker,
+#miejsce .tram-stop .marker {
+  display: table-cell;
+  z-index: 0;
+  position: static;
+  background-color: #009dd9;
+  background-position: center;
+  border: 1px solid; }
+  @media (min-width: 768px) {
+    #miejsce .bus-stop .marker,
+    #miejsce .tram-stop .marker {
+      display: block;
+      z-index: 10;
+      position: absolute; } }
 #miejsce .bus {
-  background-image: url(../assets/znacznik_bus.png); }
+  background-image: url(../assets/bus.png); }
+  @media (min-width: 768px) {
+    #miejsce .bus {
+      background-image: url(../assets/znacznik_bus.png); } }
 #miejsce .tram {
-  background-image: url(../assets/znacznik_tram.png); }
+  background-image: url(../assets/tram.png); }
+  @media (min-width: 768px) {
+    #miejsce .tram {
+      background-image: url(../assets/znacznik_tram.png); } }
 #miejsce .parking {
   background-image: url(../assets/znacznik_parking.png);
-  top: 79px;
-  left: 128px; }
+  top: -5px;
+  left: 36px; }
+  @media (min-width: 768px) {
+    #miejsce .parking {
+      top: 79px;
+      left: 128px; } }
 #miejsce .wudkrk {
   background-image: url(../assets/znacznik_wudkrk.png);
-  top: -4px;
-  left: 333px; }
+  top: -50px;
+  left: 130px; }
+  @media (min-width: 768px) {
+    #miejsce .wudkrk {
+      top: -4px;
+      left: 333px; } }
 #miejsce .bus-stop,
 #miejsce .tram-stop {
-  width: 190px;
-  position: absolute;
-  z-index: 9; }
+  display: table;
+  border-spacing: 2px;
+  margin: 0px auto 30px auto;
+  width: 310px; }
+  @media (min-width: 768px) {
+    #miejsce .bus-stop,
+    #miejsce .tram-stop {
+      width: 190px;
+      position: absolute;
+      z-index: 9;
+      display: block; } }
+  #miejsce .bus-stop .details,
+  #miejsce .tram-stop .details {
+    display: table-cell;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #e5e5e5; }
+    @media (min-width: 768px) {
+      #miejsce .bus-stop .details,
+      #miejsce .tram-stop .details {
+        display: block; } }
   #miejsce .bus-stop .name,
   #miejsce .tram-stop .name {
     background-color: #fc2077;
-    padding: 10px 30px 10px 12px; }
+    padding: 10px 30px 10px 12px;
+    border: 1px solid #fc2077; }
   #miejsce .bus-stop .name b,
   #miejsce .tram-stop .name b {
     color: white;
@@ -169,9 +237,6 @@
   #miejsce .bus-stop .lines,
   #miejsce .tram-stop .lines {
     background-color: white;
-    border-width: 0px 1px 1px 1px;
-    border-style: solid;
-    border-color: #e5e5e5;
     font-size: 14px;
     font-weight: bold;
     padding: 9px 7px; }
@@ -230,7 +295,11 @@ footer {
   background-color: #fe6521;
   font-size: 18px;
   padding: 17px 0;
-  margin: 45px 0 0 0; }
+  margin: 45px 0 0 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    footer {
+      text-align: right; } }
   footer address {
     margin: 0 !important; }
   footer address a {
@@ -258,10 +327,13 @@ section {
     height: 70px;
     color: white;
     text-align: center;
-    margin: 140px 0 30px 0;
+    margin: 75px 0 30px 0;
     background-image: url(../assets/header-left.png), url(../assets/header-right.png);
     background-position: left top, right top;
     background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      section h1 {
+        margin: 140px 0 30px 0; } }
   section h1 span {
     width: 100%;
     height: 46px;

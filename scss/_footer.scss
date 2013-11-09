@@ -11,6 +11,12 @@ footer {
   padding: 17px 0;
   margin: 45px 0 0 0;
 
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) {
+    text-align: right;
+  }
+
   address {
     margin: 0 !important;
   }

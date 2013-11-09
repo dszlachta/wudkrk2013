@@ -41,16 +41,29 @@ $oleandry_left: 641px;
   }
 
   .map-wrapper, .map {
-    width: 863px;
+
+    width: 380px;
+
+
+    @media (min-width: $screen-sm-min) {
+      width: 863px;
+    }
   }
 
   .map {
-    height: 487px;
 
-    background-image: url(../assets/stadion.png);
+    height: 214px;
     background-repeat: no-repeat;
+    margin: 0 0 52px 0;
 
-    z-index: 1;
+    background-image: url(../assets/mobile/stadion-380.png);
+
+    @media (min-width: $screen-sm-min) {
+      height: 487px;
+      background-image: url(../assets/stadion.png);
+      z-index: 1;
+    }
+
   }
 
   .marker {
@@ -59,42 +72,99 @@ $oleandry_left: 641px;
 
     z-index: 10;
     position: absolute;
-  }
-
-  .marker {
+  
     background-repeat: no-repeat;
   }
 
+  .bus-stop .marker,
+  .tram-stop .marker {
+
+    display: table-cell;
+    z-index: 0;
+    position: static;
+    
+    background-color: $wud_blue;
+    background-position: center;
+
+    border: 1px solid;
+
+    @media (min-width: $screen-sm-min) {
+      display: block;
+      z-index: 10;
+      position: absolute;
+    }
+  }
+
   .bus {
-    background-image: url(../assets/znacznik_bus.png);
+    background-image: url(../assets/bus.png);
+
+    @media (min-width: $screen-sm-min) {
+      background-image: url(../assets/znacznik_bus.png);
+    }
   }
 
   .tram {
-    background-image: url(../assets/znacznik_tram.png);
+    background-image: url(../assets/tram.png);
+
+    @media (min-width: $screen-sm-min) {
+      background-image: url(../assets/znacznik_tram.png);
+    }
   }
 
   .parking {
     background-image: url(../assets/znacznik_parking.png);
-    top: 79px;
-    left: 128px;
+    top: -5px;
+    left: 36px;
+
+    @media (min-width: $screen-sm-min) {
+      top: 79px;
+      left: 128px;
+    }
   }
 
   .wudkrk {
     background-image: url(../assets/znacznik_wudkrk.png);
-    top: -4px;
-    left: 333px;
+    top: -50px;
+    left: 130px;
+
+    @media (min-width: $screen-sm-min) {
+      top: -4px;
+      left: 333px;
+    }
   }
 
   .bus-stop,
   .tram-stop {
 
-    width: 190px;
-    position: absolute;
-    z-index: 9;
+    display: table;
+    border-spacing: 2px;
+    margin: 0px auto 30px auto;
+    width: 310px;
+
+    @media (min-width: $screen-sm-min) {
+      width: 190px;
+      position: absolute;
+      z-index: 9;
+      display: block;
+    }
+
+    .details {
+      display: table-cell;
+
+      border-width: 0px 1px 1px 1px;
+      border-style: solid;
+      border-color: $nav_border;
+
+      @media (min-width: $screen-sm-min) {
+          display: block;
+      }
+    }
 
     .name {
       background-color: $wud_pink;
       padding: 10px 30px 10px 12px;
+      //margin: -1px;
+      border: 1px solid $wud_pink;
     }
 
     .name b {
@@ -104,9 +174,6 @@ $oleandry_left: 641px;
 
     .lines {
       background-color: white;
-      border-width: 0px 1px 1px 1px;
-      border-style: solid;
-      border-color: $nav_border;
 
       font-size: 14px;
       font-weight: bold;
