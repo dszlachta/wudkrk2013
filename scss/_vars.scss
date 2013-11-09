@@ -1,0 +1,12 @@
+$wud_pink: #fc2077;
+$wud_blue: #009dd9;
+$wud_orange: #fe6521;
+
+$nav_border: #e5e5e5;
+
+@mixin separation_border {
+  border-bottom: 1px solid $nav_border;
+}
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;

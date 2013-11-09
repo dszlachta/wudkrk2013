@@ -1,0 +1,170 @@
+#info {
+
+  &>div:first-child {
+
+    background-repeat: repeat-x;
+    background-position-x: 42%;
+
+    @include separation_border;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 55px;
+      background-image: url(../assets/wawel.png);
+    }
+  }
+
+  &>div:nth-child(2) {
+    background-color: white;
+    margin: 55px 0;
+  }
+
+  .composition {
+
+    @media (min-width: $screen-sm-min) {
+      position: relative;
+    }
+  }
+
+  .banner {
+    margin: auto;
+    background-repeat: no-repeat;
+
+    width: 375px;
+    height: 150px;
+    background-image: url(../assets/mobile/kompozycja-375.png);
+
+    @media (min-width: $screen-sm-min) {
+      height: 468px;
+      width: 705px;
+      background-image: url(../assets/kompozycja1.png);
+      margin: 74px auto 0 auto;
+    }
+
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: normal;
+    color: $wud_blue;
+    margin-top: 5px;
+
+    //FIXME 
+    text-align: left;
+    background: none;
+  }
+
+  .line {
+    display: block;
+  }
+
+  .pink {
+    background-color: $wud_pink;
+  }
+
+  .blue {
+    background-color: $wud_blue;
+  }
+
+  .pink,
+  .blue {
+    height: 48px;
+
+    //margin: 6px 4.5px;
+    //width: 100%;
+
+    &:last-child {
+      //margin: 6px 9px 6px 0;
+    }
+  }
+
+ .logo {
+
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+
+  top: 0px;
+
+  @media (min-width: $screen-sm-min) {
+    position: absolute;
+    top: 240px;
+  }
+
+  .line {
+    display: block;
+  }
+
+  .line:nth-child(2) {
+    margin-top: 6px;
+  }
+
+  .line div {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .wud {
+    width: 407px;
+  }
+
+  .cross {
+    width: 52px;
+    vertical-align: top;
+  }
+
+  .cross img {
+    margin-bottom: 10.5px;
+  }
+
+  .when {
+    width: 204px;
+  }
+
+  .where {
+    width: 134px;
+  }
+
+}
+}
+
+#info aside {
+
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 55px;
+
+  @media (min-width: $screen-sm-min) {
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    text-align: right;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p:first-child {
+    font-size: 35px;
+  }
+
+  p:nth-child(2) {
+    font-size: 20px;
+  }
+
+}
+
+#info .description {
+  font-size: 20px;
+
+  p {
+    margin-bottom: 35px;
+  }
+  
+}
+
+#info .dummy-button-wrapper {
+  margin-top: 15px;
+}
+

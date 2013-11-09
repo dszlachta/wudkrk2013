@@ -1,0 +1,376 @@
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5; }
+  @media (min-width: 768px) {
+    .navbar {
+      height: 88px; } }
+  .navbar button.navbar-toggle {
+    border: 0 !important; }
+    .navbar button.navbar-toggle:hover {
+      background-color: white !important; }
+  .navbar .navbar-brand img {
+    width: 55px;
+    height: 36px;
+    margin: 6px 12px; }
+    @media (min-width: 768px) {
+      .navbar .navbar-brand img {
+        height: 45px;
+        margin: 21.5px 0;
+        margin-right: 20px; } }
+
+.navbar-brand {
+  padding: 0 !important; }
+
+.navbar-nav a {
+  font-weight: bold;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .navbar-nav a {
+      margin: 29px 10%;
+      padding: 6px 12px !important;
+      font-size: 18px; } }
+  @media (min-width: 992px) {
+    .navbar-nav a {
+      margin: 29px 20px; } }
+.navbar-nav a.contact {
+  color: #fe6521 !important;
+  text-transform: none;
+  font-weight: normal; }
+
+.navbar-left a {
+  color: black !important; }
+  .navbar-left a:hover {
+    background-color: #fe6521 !important;
+    color: white !important; }
+
+.navbar a.contact {
+  border-left: 1px solid #e5e5e5; }
+
+#info > div:first-child {
+  background-repeat: repeat-x;
+  background-position-x: 42%;
+  border-bottom: 1px solid #e5e5e5; }
+  @media (min-width: 768px) {
+    #info > div:first-child {
+      margin-bottom: 55px;
+      background-image: url(../assets/wawel.png); } }
+#info > div:nth-child(2) {
+  background-color: white;
+  margin: 55px 0; }
+@media (min-width: 768px) {
+  #info .composition {
+    position: relative; } }
+#info .banner {
+  margin: auto;
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 150px;
+  background-image: url(../assets/mobile/kompozycja-375.png); }
+  @media (min-width: 768px) {
+    #info .banner {
+      height: 468px;
+      width: 705px;
+      background-image: url(../assets/kompozycja1.png);
+      margin: 74px auto 0 auto; } }
+#info h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #009dd9;
+  margin-top: 5px;
+  text-align: left;
+  background: none; }
+#info .line {
+  display: block; }
+#info .pink {
+  background-color: #fc2077; }
+#info .blue {
+  background-color: #009dd9; }
+#info .pink,
+#info .blue {
+  height: 48px; }
+#info .logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  top: 0px; }
+  @media (min-width: 768px) {
+    #info .logo {
+      position: absolute;
+      top: 240px; } }
+  #info .logo .line {
+    display: block; }
+  #info .logo .line:nth-child(2) {
+    margin-top: 6px; }
+  #info .logo .line div {
+    display: inline-block;
+    text-align: center; }
+  #info .logo .wud {
+    width: 407px; }
+  #info .logo .cross {
+    width: 52px;
+    vertical-align: top; }
+  #info .logo .cross img {
+    margin-bottom: 10.5px; }
+  #info .logo .when {
+    width: 204px; }
+  #info .logo .where {
+    width: 134px; }
+
+#info aside {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 55px; }
+  @media (min-width: 768px) {
+    #info aside {
+      position: absolute;
+      top: 300px;
+      right: 0px;
+      text-align: right;
+      margin-bottom: 0; } }
+  #info aside p {
+    margin: 0; }
+  #info aside p:first-child {
+    font-size: 35px; }
+  #info aside p:nth-child(2) {
+    font-size: 20px; }
+
+#info .description {
+  font-size: 20px; }
+  #info .description p {
+    margin-bottom: 35px; }
+
+#info .dummy-button-wrapper {
+  margin-top: 15px; }
+
+#miejsce {
+  /*
+  .marker.cracovia {
+    @include cracovia;
+  }
+  */
+  /*
+  .marker.blonia {
+    @include blonia;
+  }
+  */
+  /*
+  .marker.oleandry {
+    @include oleandry;
+  }
+   */ }
+  #miejsce address {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 85px; }
+    @media (min-width: 992px) {
+      #miejsce address {
+        font-size: 34px; } }
+  #miejsce .map-wrapper {
+    position: relative;
+    margin: auto; }
+  #miejsce .map-wrapper, #miejsce .map {
+    width: 380px; }
+    @media (min-width: 992px) {
+      #miejsce .map-wrapper, #miejsce .map {
+        width: 863px; } }
+  #miejsce .map {
+    height: 214px;
+    background-repeat: no-repeat;
+    margin: 0 0 52px 0;
+    background-image: url(../assets/mobile/stadion-380.png); }
+    @media (min-width: 992px) {
+      #miejsce .map {
+        height: 487px;
+        background-image: url(../assets/stadion.png);
+        z-index: 1; } }
+  #miejsce .marker {
+    width: 66px;
+    height: 104px;
+    z-index: 10;
+    position: absolute;
+    background-repeat: no-repeat; }
+  #miejsce .bus-stop .marker,
+  #miejsce .tram-stop .marker {
+    display: table-cell;
+    z-index: 0;
+    position: static;
+    background-color: #009dd9;
+    background-position: center;
+    border: 1px solid; }
+    @media (min-width: 992px) {
+      #miejsce .bus-stop .marker,
+      #miejsce .tram-stop .marker {
+        background-color: transparent;
+        border: 0;
+        display: block;
+        z-index: 10;
+        position: absolute;
+        top: -14px;
+        right: -48px; } }
+  #miejsce .bus {
+    background-image: url(../assets/bus.png); }
+    @media (min-width: 992px) {
+      #miejsce .bus {
+        background-image: url(../assets/znacznik_bus.png); } }
+  #miejsce .tram {
+    background-image: url(../assets/tram.png); }
+    @media (min-width: 992px) {
+      #miejsce .tram {
+        background-image: url(../assets/znacznik_tram.png); } }
+  #miejsce .parking {
+    background-image: url(../assets/znacznik_parking.png);
+    top: -5px;
+    left: 36px; }
+    @media (min-width: 992px) {
+      #miejsce .parking {
+        top: 79px;
+        left: 128px; } }
+  #miejsce .wudkrk {
+    background-image: url(../assets/znacznik_wudkrk.png);
+    top: -50px;
+    left: 130px; }
+    @media (min-width: 992px) {
+      #miejsce .wudkrk {
+        top: -4px;
+        left: 333px; } }
+  #miejsce .bus-stop,
+  #miejsce .tram-stop {
+    display: table;
+    border-spacing: 2px;
+    margin: 0px auto 30px auto;
+    width: 310px; }
+    @media (min-width: 992px) {
+      #miejsce .bus-stop,
+      #miejsce .tram-stop {
+        width: 190px;
+        position: absolute;
+        z-index: 9;
+        display: block; } }
+    #miejsce .bus-stop .details,
+    #miejsce .tram-stop .details {
+      display: table-cell;
+      border-width: 0px 1px 1px 1px;
+      border-style: solid;
+      border-color: #e5e5e5; }
+      @media (min-width: 992px) {
+        #miejsce .bus-stop .details,
+        #miejsce .tram-stop .details {
+          display: block; } }
+    #miejsce .bus-stop .name,
+    #miejsce .tram-stop .name {
+      background-color: #fc2077;
+      padding: 10px 30px 10px 12px;
+      border: 1px solid #fc2077; }
+    #miejsce .bus-stop .name b,
+    #miejsce .tram-stop .name b {
+      color: white;
+      font-size: 20px; }
+    #miejsce .bus-stop .lines,
+    #miejsce .tram-stop .lines {
+      background-color: white;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 9px 7px; }
+    #miejsce .bus-stop ul,
+    #miejsce .tram-stop ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-weight: normal; }
+    #miejsce .bus-stop ul li,
+    #miejsce .tram-stop ul li {
+      display: inline; }
+    #miejsce .bus-stop ul li:after,
+    #miejsce .tram-stop ul li:after {
+      content: ","; }
+    #miejsce .bus-stop ul li:last-child:after,
+    #miejsce .tram-stop ul li:last-child:after {
+      content: "."; }
+  #miejsce .tram-stop ul {
+    display: inline-block; }
+  #miejsce .bus-stop.cracovia {
+    top: 330px;
+    left: -50px; }
+    @media (min-width: 992px) {
+      #miejsce .bus-stop.cracovia {
+        width: 200px; } }
+  #miejsce .bus-stop.blonia {
+    top: 341px;
+    left: 230px; }
+  #miejsce .tram-stop.oleandry {
+    top: 219px;
+    left: 641px; }
+
+#sponsorzy {
+  border-bottom: 0; }
+  #sponsorzy .sponsors-list {
+    padding: 16px 12px;
+    border-top: 1px solid #e5e5e5; }
+    #sponsorzy .sponsors-list h2 {
+      margin-top: 0px;
+      font-size: 24px; }
+    #sponsorzy .sponsors-list ul {
+      text-align: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    #sponsorzy .sponsors-list ul li {
+      display: inline; }
+
+footer {
+  background-color: #fe6521;
+  font-size: 18px;
+  padding: 17px 0;
+  margin: 45px 0 0 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    footer {
+      text-align: right; } }
+  footer address {
+    margin: 0 !important; }
+  footer address a {
+    color: white !important; }
+
+body {
+  background-color: white; }
+
+body, h1, h2 {
+  font-family: 'PT Sans', 'Arial', sans-serif; }
+
+a {
+  color: #fe6521; }
+
+h1, h2 {
+  font-weight: bold; }
+
+main {
+  margin-top: 89px; }
+
+section {
+  border-bottom: 1px solid #e5e5e5; }
+  section h1 {
+    width: 100%;
+    height: 70px;
+    color: white;
+    text-align: center;
+    margin: 75px 0 30px 0;
+    background-image: url(../assets/header-left.png), url(../assets/header-right.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      section h1 {
+        margin: 140px 0 30px 0; } }
+  section h1 span {
+    width: 100%;
+    height: 46px;
+    background-color: #009dd9;
+    display: block; }
+
+.dummy-button i {
+  padding: 5px 13px;
+  font-style: normal;
+  background-color: #fe6521;
+  color: white;
+  font-weight: bold;
+  font-size: 20px; }

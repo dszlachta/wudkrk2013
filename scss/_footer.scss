@@ -1,0 +1,28 @@
+$footer_font_size: 18px;
+$footer_height: 50px;
+$footer_padding_top: ($footer_height - $footer_font_size) / 2;
+
+footer {
+
+  background-color: $wud_orange;
+  font-size: 18px;
+
+  //padding: $footer_padding_top 0;
+  padding: 17px 0;
+  margin: 45px 0 0 0;
+
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) {
+    text-align: right;
+  }
+
+  address {
+    margin: 0 !important;
+  }
+
+  address a {
+    color: white !important;
+  }
+
+}
