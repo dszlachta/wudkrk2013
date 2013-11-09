@@ -35,7 +35,7 @@ $oleandry_left: 641px;
     margin-bottom: 85px;
 
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       font-size: 34px;
     }
   }
@@ -50,7 +50,7 @@ $oleandry_left: 641px;
     width: 380px;
 
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       width: 863px;
     }
   }
@@ -63,7 +63,7 @@ $oleandry_left: 641px;
 
     background-image: url(../assets/mobile/stadion-380.png);
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       height: 487px;
       background-image: url(../assets/stadion.png);
       z-index: 1;
@@ -93,7 +93,7 @@ $oleandry_left: 641px;
 
     border: 1px solid;
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       background-color: transparent;
       border: 0;
       display: block;
@@ -107,7 +107,7 @@ $oleandry_left: 641px;
   .bus {
     background-image: url(../assets/bus.png);
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       background-image: url(../assets/znacznik_bus.png);
     }
   }
@@ -115,7 +115,7 @@ $oleandry_left: 641px;
   .tram {
     background-image: url(../assets/tram.png);
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       background-image: url(../assets/znacznik_tram.png);
     }
   }
@@ -125,7 +125,7 @@ $oleandry_left: 641px;
     top: -5px;
     left: 36px;
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       top: 79px;
       left: 128px;
     }
@@ -136,7 +136,7 @@ $oleandry_left: 641px;
     top: -50px;
     left: 130px;
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       top: -4px;
       left: 333px;
     }
@@ -150,7 +150,7 @@ $oleandry_left: 641px;
     margin: 0px auto 30px auto;
     width: 310px;
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       width: 190px;
       position: absolute;
       z-index: 9;
@@ -164,7 +164,7 @@ $oleandry_left: 641px;
       border-style: solid;
       border-color: $nav_border;
 
-      @media (min-width: $screen-sm-min) {
+      @media (min-width: $screen-md-min) {
           display: block;
       }
     }
@@ -226,7 +226,7 @@ $oleandry_left: 641px;
     top: $cracovia_top;
     left: $cracovia_left;
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       width: 200px;
     }
   }
