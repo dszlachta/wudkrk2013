@@ -32,6 +32,7 @@ $oleandry_left: 641px;
     font-weight: bold;
 
     text-align: center;
+    margin-bottom: 85px;
   }
 
   .map-wrapper {
@@ -70,6 +71,18 @@ $oleandry_left: 641px;
 
   .tram {
     background-image: url(../assets/znacznik_tram.png);
+  }
+
+  .parking {
+    background-image: url(../assets/znacznik_parking.png);
+    top: 79px;
+    left: 128px;
+  }
+
+  .wudkrk {
+    background-image: url(../assets/znacznik_wudkrk.png);
+    top: -4px;
+    left: 333px;
   }
 
   .bus-stop,

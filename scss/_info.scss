@@ -2,7 +2,8 @@
 
   &>div:first-child {
     background-image: url(../assets/wawel.png);
-    background-repeat: no-repeat;
+    background-position-x: 42%;
+    background-repeat: repeat-x;
 
     margin-bottom: 55px;
 
@@ -31,6 +32,10 @@
     font-weight: normal;
     color: $wud_blue;
     margin-top: 5px;
+
+    //FIXME 
+    text-align: left;
+    background: none;
   }
 
   .line {
@@ -87,7 +92,10 @@
   .cross {
     width: 52px;
     vertical-align: top;
-    margint-top: 6px;
+  }
+
+  .cross img {
+    margin-bottom: 10.5px;
   }
 
   .when {
@@ -100,7 +108,7 @@
 
 }
 
-#info address {
+#info aside {
   position: absolute;
   top: 300px;
   right: 0px;
@@ -116,8 +124,8 @@
     font-size: 35px;
   }
 
-  p:last-child {
-    font-size: 24px;
+  p:nth-child(2) {
+    font-size: 20px;
   }
 
 }

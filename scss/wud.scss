@@ -49,3 +49,15 @@ section {
       display: block;
     }
 }
+
+.dummy-button {
+  background-color: $wud_orange;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+  i {
+    font-style: normal;
+    margin: 5px 13px;
+  }
+}

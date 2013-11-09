@@ -24,12 +24,16 @@
 .navbar-left a {
   color: black !important; }
   .navbar-left a:hover {
-    background-color: #fe6521;
-    color: white; }
+    background-color: #fe6521 !important;
+    color: white !important; }
+
+.navbar a.contact {
+  border-left: 1px solid #e5e5e5; }
 
 #info > div:first-child {
   background-image: url(../assets/wawel.png);
-  background-repeat: no-repeat;
+  background-position-x: 42%;
+  background-repeat: repeat-x;
   margin-bottom: 55px;
   border-bottom: 1px solid #e5e5e5; }
 #info > div:nth-child(2) {
@@ -47,7 +51,9 @@
   font-size: 18px;
   font-weight: normal;
   color: #009dd9;
-  margin-top: 5px; }
+  margin-top: 5px;
+  text-align: left;
+  background: none; }
 #info .line {
   display: block; }
 #info .pink {
@@ -75,25 +81,26 @@
     width: 407px; }
   #info .logo .cross {
     width: 52px;
-    vertical-align: top;
-    margint-top: 6px; }
+    vertical-align: top; }
+  #info .logo .cross img {
+    margin-bottom: 10.5px; }
   #info .logo .when {
     width: 204px; }
   #info .logo .where {
     width: 134px; }
 
-#info address {
+#info aside {
   position: absolute;
   top: 300px;
   right: 0px;
   font-weight: bold;
   text-align: right; }
-  #info address p {
+  #info aside p {
     margin: 0; }
-  #info address p:first-child {
+  #info aside p:first-child {
     font-size: 35px; }
-  #info address p:last-child {
-    font-size: 24px; }
+  #info aside p:nth-child(2) {
+    font-size: 20px; }
 
 #info .description {
   font-size: 20px; }
@@ -101,7 +108,8 @@
 #miejsce address {
   font-size: 34px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 85px; }
 #miejsce .map-wrapper {
   position: relative;
   margin: auto; }
@@ -123,6 +131,14 @@
   background-image: url(../assets/znacznik_bus.png); }
 #miejsce .tram {
   background-image: url(../assets/znacznik_tram.png); }
+#miejsce .parking {
+  background-image: url(../assets/znacznik_parking.png);
+  top: 79px;
+  left: 128px; }
+#miejsce .wudkrk {
+  background-image: url(../assets/znacznik_wudkrk.png);
+  top: -4px;
+  left: 333px; }
 #miejsce .bus-stop,
 #miejsce .tram-stop {
   width: 190px;
@@ -225,3 +241,12 @@ section {
     height: 46px;
     background-color: #009dd9;
     display: block; }
+
+.dummy-button {
+  background-color: #fe6521;
+  color: white;
+  font-weight: bold;
+  font-size: 20px; }
+  .dummy-button i {
+    font-style: normal;
+    margin: 5px 13px; }
