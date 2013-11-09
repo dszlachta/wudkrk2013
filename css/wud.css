@@ -104,6 +104,8 @@
 
 #info .description {
   font-size: 20px; }
+  #info .description p {
+    margin-bottom: 35px; }
 
 #info .dummy-button-wrapper {
   margin-top: 15px; }
