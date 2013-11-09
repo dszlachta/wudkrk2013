@@ -18,8 +18,14 @@
     margin: 55px 0;
   }
 
+  .composition {
+
+    @media (min-width: $screen-sm-min) {
+      position: relative;
+    }
+  }
+
   .banner {
-    position: relative;
     margin: auto;
     background-repeat: no-repeat;
 

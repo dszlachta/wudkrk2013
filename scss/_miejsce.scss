@@ -28,11 +28,16 @@ $oleandry_left: 641px;
 #miejsce {
 
   address {
-    font-size: 34px;
+    font-size: 24px;
     font-weight: bold;
 
     text-align: center;
     margin-bottom: 85px;
+
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 34px;
+    }
   }
 
   .map-wrapper {
@@ -89,9 +94,13 @@ $oleandry_left: 641px;
     border: 1px solid;
 
     @media (min-width: $screen-sm-min) {
+      background-color: transparent;
+      border: 0;
       display: block;
       z-index: 10;
       position: absolute;
+      top: -14px;
+      right: -48px;
     }
   }
 
@@ -207,27 +216,37 @@ $oleandry_left: 641px;
     }
   }
 
+  /*
   .marker.cracovia {
     @include cracovia;
   }
+  */
 
   .bus-stop.cracovia {
     top: $cracovia_top;
     left: $cracovia_left;
+
+    @media (min-width: $screen-sm-min) {
+      width: 200px;
+    }
   }
 
+  /*
   .marker.blonia {
     @include blonia;
   }
+  */
 
   .bus-stop.blonia {
     top: $blonia_top;
     left: $blonia_left;
   }
 
+  /*
   .marker.oleandry {
     @include oleandry;
   }
+   */
 
   .tram-stop.oleandry {
     top: $oleandry_top;

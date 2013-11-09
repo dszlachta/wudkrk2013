@@ -17,6 +17,14 @@ $navbar_link_margin_left: 20px;
     height: $navbar_height;
   }
 
+  button.navbar-toggle {
+    border: 0 !important;
+
+    &:hover {
+      background-color: white !important;
+    }
+  }
+
   .navbar-brand img {
     width: 55px;
     height: 36px;

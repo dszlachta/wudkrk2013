@@ -4,6 +4,10 @@
   @media (min-width: 768px) {
     .navbar {
       height: 88px; } }
+  .navbar button.navbar-toggle {
+    border: 0 !important; }
+    .navbar button.navbar-toggle:hover {
+      background-color: white !important; }
   .navbar .navbar-brand img {
     width: 55px;
     height: 36px;
@@ -50,8 +54,10 @@
 #info > div:nth-child(2) {
   background-color: white;
   margin: 55px 0; }
+@media (min-width: 768px) {
+  #info .composition {
+    position: relative; } }
 #info .banner {
-  position: relative;
   margin: auto;
   background-repeat: no-repeat;
   width: 375px;
@@ -133,148 +139,165 @@
 #info .dummy-button-wrapper {
   margin-top: 15px; }
 
-#miejsce address {
-  font-size: 34px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 85px; }
-#miejsce .map-wrapper {
-  position: relative;
-  margin: auto; }
-#miejsce .map-wrapper, #miejsce .map {
-  width: 380px; }
-  @media (min-width: 768px) {
-    #miejsce .map-wrapper, #miejsce .map {
-      width: 863px; } }
-#miejsce .map {
-  height: 214px;
-  background-repeat: no-repeat;
-  margin: 0 0 52px 0;
-  background-image: url(../assets/mobile/stadion-380.png); }
-  @media (min-width: 768px) {
-    #miejsce .map {
-      height: 487px;
-      background-image: url(../assets/stadion.png);
-      z-index: 1; } }
-#miejsce .marker {
-  width: 66px;
-  height: 104px;
-  z-index: 10;
-  position: absolute;
-  background-repeat: no-repeat; }
-#miejsce .bus-stop .marker,
-#miejsce .tram-stop .marker {
-  display: table-cell;
-  z-index: 0;
-  position: static;
-  background-color: #009dd9;
-  background-position: center;
-  border: 1px solid; }
-  @media (min-width: 768px) {
-    #miejsce .bus-stop .marker,
-    #miejsce .tram-stop .marker {
-      display: block;
-      z-index: 10;
-      position: absolute; } }
-#miejsce .bus {
-  background-image: url(../assets/bus.png); }
-  @media (min-width: 768px) {
-    #miejsce .bus {
-      background-image: url(../assets/znacznik_bus.png); } }
-#miejsce .tram {
-  background-image: url(../assets/tram.png); }
-  @media (min-width: 768px) {
-    #miejsce .tram {
-      background-image: url(../assets/znacznik_tram.png); } }
-#miejsce .parking {
-  background-image: url(../assets/znacznik_parking.png);
-  top: -5px;
-  left: 36px; }
-  @media (min-width: 768px) {
-    #miejsce .parking {
-      top: 79px;
-      left: 128px; } }
-#miejsce .wudkrk {
-  background-image: url(../assets/znacznik_wudkrk.png);
-  top: -50px;
-  left: 130px; }
-  @media (min-width: 768px) {
-    #miejsce .wudkrk {
-      top: -4px;
-      left: 333px; } }
-#miejsce .bus-stop,
-#miejsce .tram-stop {
-  display: table;
-  border-spacing: 2px;
-  margin: 0px auto 30px auto;
-  width: 310px; }
-  @media (min-width: 768px) {
-    #miejsce .bus-stop,
-    #miejsce .tram-stop {
-      width: 190px;
-      position: absolute;
-      z-index: 9;
-      display: block; } }
-  #miejsce .bus-stop .details,
-  #miejsce .tram-stop .details {
-    display: table-cell;
-    border-width: 0px 1px 1px 1px;
-    border-style: solid;
-    border-color: #e5e5e5; }
-    @media (min-width: 768px) {
-      #miejsce .bus-stop .details,
-      #miejsce .tram-stop .details {
-        display: block; } }
-  #miejsce .bus-stop .name,
-  #miejsce .tram-stop .name {
-    background-color: #fc2077;
-    padding: 10px 30px 10px 12px;
-    border: 1px solid #fc2077; }
-  #miejsce .bus-stop .name b,
-  #miejsce .tram-stop .name b {
-    color: white;
-    font-size: 20px; }
-  #miejsce .bus-stop .lines,
-  #miejsce .tram-stop .lines {
-    background-color: white;
-    font-size: 14px;
+#miejsce {
+  /*
+  .marker.cracovia {
+    @include cracovia;
+  }
+  */
+  /*
+  .marker.blonia {
+    @include blonia;
+  }
+  */
+  /*
+  .marker.oleandry {
+    @include oleandry;
+  }
+   */ }
+  #miejsce address {
+    font-size: 24px;
     font-weight: bold;
-    padding: 9px 7px; }
-  #miejsce .bus-stop ul,
+    text-align: center;
+    margin-bottom: 85px; }
+    @media (min-width: 768px) {
+      #miejsce address {
+        font-size: 34px; } }
+  #miejsce .map-wrapper {
+    position: relative;
+    margin: auto; }
+  #miejsce .map-wrapper, #miejsce .map {
+    width: 380px; }
+    @media (min-width: 768px) {
+      #miejsce .map-wrapper, #miejsce .map {
+        width: 863px; } }
+  #miejsce .map {
+    height: 214px;
+    background-repeat: no-repeat;
+    margin: 0 0 52px 0;
+    background-image: url(../assets/mobile/stadion-380.png); }
+    @media (min-width: 768px) {
+      #miejsce .map {
+        height: 487px;
+        background-image: url(../assets/stadion.png);
+        z-index: 1; } }
+  #miejsce .marker {
+    width: 66px;
+    height: 104px;
+    z-index: 10;
+    position: absolute;
+    background-repeat: no-repeat; }
+  #miejsce .bus-stop .marker,
+  #miejsce .tram-stop .marker {
+    display: table-cell;
+    z-index: 0;
+    position: static;
+    background-color: #009dd9;
+    background-position: center;
+    border: 1px solid; }
+    @media (min-width: 768px) {
+      #miejsce .bus-stop .marker,
+      #miejsce .tram-stop .marker {
+        background-color: transparent;
+        border: 0;
+        display: block;
+        z-index: 10;
+        position: absolute;
+        top: -14px;
+        right: -48px; } }
+  #miejsce .bus {
+    background-image: url(../assets/bus.png); }
+    @media (min-width: 768px) {
+      #miejsce .bus {
+        background-image: url(../assets/znacznik_bus.png); } }
+  #miejsce .tram {
+    background-image: url(../assets/tram.png); }
+    @media (min-width: 768px) {
+      #miejsce .tram {
+        background-image: url(../assets/znacznik_tram.png); } }
+  #miejsce .parking {
+    background-image: url(../assets/znacznik_parking.png);
+    top: -5px;
+    left: 36px; }
+    @media (min-width: 768px) {
+      #miejsce .parking {
+        top: 79px;
+        left: 128px; } }
+  #miejsce .wudkrk {
+    background-image: url(../assets/znacznik_wudkrk.png);
+    top: -50px;
+    left: 130px; }
+    @media (min-width: 768px) {
+      #miejsce .wudkrk {
+        top: -4px;
+        left: 333px; } }
+  #miejsce .bus-stop,
+  #miejsce .tram-stop {
+    display: table;
+    border-spacing: 2px;
+    margin: 0px auto 30px auto;
+    width: 310px; }
+    @media (min-width: 768px) {
+      #miejsce .bus-stop,
+      #miejsce .tram-stop {
+        width: 190px;
+        position: absolute;
+        z-index: 9;
+        display: block; } }
+    #miejsce .bus-stop .details,
+    #miejsce .tram-stop .details {
+      display: table-cell;
+      border-width: 0px 1px 1px 1px;
+      border-style: solid;
+      border-color: #e5e5e5; }
+      @media (min-width: 768px) {
+        #miejsce .bus-stop .details,
+        #miejsce .tram-stop .details {
+          display: block; } }
+    #miejsce .bus-stop .name,
+    #miejsce .tram-stop .name {
+      background-color: #fc2077;
+      padding: 10px 30px 10px 12px;
+      border: 1px solid #fc2077; }
+    #miejsce .bus-stop .name b,
+    #miejsce .tram-stop .name b {
+      color: white;
+      font-size: 20px; }
+    #miejsce .bus-stop .lines,
+    #miejsce .tram-stop .lines {
+      background-color: white;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 9px 7px; }
+    #miejsce .bus-stop ul,
+    #miejsce .tram-stop ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-weight: normal; }
+    #miejsce .bus-stop ul li,
+    #miejsce .tram-stop ul li {
+      display: inline; }
+    #miejsce .bus-stop ul li:after,
+    #miejsce .tram-stop ul li:after {
+      content: ","; }
+    #miejsce .bus-stop ul li:last-child:after,
+    #miejsce .tram-stop ul li:last-child:after {
+      content: "."; }
   #miejsce .tram-stop ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-weight: normal; }
-  #miejsce .bus-stop ul li,
-  #miejsce .tram-stop ul li {
-    display: inline; }
-  #miejsce .bus-stop ul li:after,
-  #miejsce .tram-stop ul li:after {
-    content: ","; }
-  #miejsce .bus-stop ul li:last-child:after,
-  #miejsce .tram-stop ul li:last-child:after {
-    content: "."; }
-#miejsce .tram-stop ul {
-  display: inline-block; }
-#miejsce .marker.cracovia {
-  top: 316px;
-  left: 120px; }
-#miejsce .bus-stop.cracovia {
-  top: 330px;
-  left: -50px; }
-#miejsce .marker.blonia {
-  top: 327px;
-  left: 400px; }
-#miejsce .bus-stop.blonia {
-  top: 341px;
-  left: 230px; }
-#miejsce .marker.oleandry {
-  top: 205px;
-  left: 811px; }
-#miejsce .tram-stop.oleandry {
-  top: 219px;
-  left: 641px; }
+    display: inline-block; }
+  #miejsce .bus-stop.cracovia {
+    top: 330px;
+    left: -50px; }
+    @media (min-width: 768px) {
+      #miejsce .bus-stop.cracovia {
+        width: 200px; } }
+  #miejsce .bus-stop.blonia {
+    top: 341px;
+    left: 230px; }
+  #miejsce .tram-stop.oleandry {
+    top: 219px;
+    left: 641px; }
 
 #sponsorzy {
   border-bottom: 0; }
@@ -282,7 +305,8 @@
     padding: 16px 12px;
     border-top: 1px solid #e5e5e5; }
     #sponsorzy .sponsors-list h2 {
-      margin-top: 0px; }
+      margin-top: 0px;
+      font-size: 24px; }
     #sponsorzy .sponsors-list ul {
       text-align: center;
       list-style-type: none;
