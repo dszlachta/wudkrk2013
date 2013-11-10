@@ -50,7 +50,7 @@ $navbar_link_margin_left: 20px;
     text-transform: uppercase;
 
     @media (min-width: $screen-sm-min) {
-      margin: $navbar_link_margin_top 10%;
+      margin: $navbar_link_margin_top 5%;
       padding: $navbar_link_padding_top $navbar_link_padding_left !important;
       font-size: $navbar_link_font_size;
     }
