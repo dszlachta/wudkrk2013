@@ -26,7 +26,7 @@
   text-transform: uppercase; }
   @media (min-width: 768px) {
     .navbar-nav a {
-      margin: 29px 10%;
+      margin: 29px 5%;
       padding: 6px 12px !important;
       font-size: 18px; } }
   @media (min-width: 992px) {
@@ -89,10 +89,13 @@
 #info .blue {
   height: 48px; }
 #info .logo {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   color: white;
   top: 0px; }
+  @media (min-width: 768px) {
+    #info .logo {
+      font-size: 35px; } }
   @media (min-width: 768px) {
     #info .logo {
       position: absolute;
@@ -105,16 +108,28 @@
     display: inline-block;
     text-align: center; }
   #info .logo .wud {
-    width: 407px; }
+    width: 312px; }
+    @media (min-width: 768px) {
+      #info .logo .wud {
+        width: 407px; } }
   #info .logo .cross {
-    width: 52px;
+    width: 41px;
     vertical-align: top; }
+    @media (min-width: 768px) {
+      #info .logo .cross {
+        width: 52px; } }
   #info .logo .cross img {
     margin-bottom: 10.5px; }
   #info .logo .when {
-    width: 204px; }
+    width: 157px; }
+    @media (min-width: 768px) {
+      #info .logo .when {
+        width: 204px; } }
   #info .logo .where {
-    width: 134px; }
+    width: 103px; }
+    @media (min-width: 768px) {
+      #info .logo .where {
+        width: 134px; } }
 
 #info aside {
   font-weight: bold;
