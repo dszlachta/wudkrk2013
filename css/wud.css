@@ -63,10 +63,9 @@
 #info .banner {
   margin: auto;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 375px;
   height: 150px;
-  background-image: url(../assets/mobile/kompozycja-375.png);
-  background-position: center; }
+  background-image: url(../assets/mobile/kompozycja-375.png); }
   @media (min-width: 768px) {
     #info .banner {
       height: 468px;
@@ -90,15 +89,13 @@
 #info .blue {
   height: 48px; }
 #info .logo {
-  -webkit-transform: scale(0.9);
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   color: white;
   top: 0px; }
   @media (min-width: 768px) {
     #info .logo {
-      font-size: 35px;
-      -webkit-transform: scale(1); } }
+      font-size: 35px; } }
   @media (min-width: 768px) {
     #info .logo {
       position: absolute;
@@ -111,16 +108,28 @@
     display: inline-block;
     text-align: center; }
   #info .logo .wud {
-    width: 407px; }
+    width: 312px; }
+    @media (min-width: 768px) {
+      #info .logo .wud {
+        width: 407px; } }
   #info .logo .cross {
-    width: 52px;
+    width: 41px;
     vertical-align: top; }
+    @media (min-width: 768px) {
+      #info .logo .cross {
+        width: 52px; } }
   #info .logo .cross img {
     margin-bottom: 10.5px; }
   #info .logo .when {
-    width: 204px; }
+    width: 157px; }
+    @media (min-width: 768px) {
+      #info .logo .when {
+        width: 204px; } }
   #info .logo .where {
-    width: 134px; }
+    width: 103px; }
+    @media (min-width: 768px) {
+      #info .logo .where {
+        width: 134px; } }
 
 #info aside {
   font-weight: bold;

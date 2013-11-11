@@ -29,10 +29,9 @@
     margin: auto;
     background-repeat: no-repeat;
 
-    width: 100%; //375px;
+    width: 375px;
     height: 150px;
     background-image: url(../assets/mobile/kompozycja-375.png);
-    background-position: center;
 
     @media (min-width: $screen-sm-min) {
       height: 468px;
@@ -80,14 +79,10 @@
 
  .logo {
 
-   -webkit-transform: scale(.9);
+   font-size: 25px;
 
-   //font-size: 25px;
-
-    font-size: 35px;
   @media (min-width: $screen-sm-min) {
     font-size: 35px;
-   -webkit-transform: scale(1);
   }
 
   font-weight: bold;
@@ -114,20 +109,20 @@
   }
 
   .wud {
-    //width: 312px;
+    width: 312px;
 
-    //@media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       width: 407px;
-    //}
+    }
   }
 
   .cross {
 
-    //width: 41px;
+    width: 41px;
 
-    //@media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       width: 52px;
-    //}
+    }
     vertical-align: top;
   }
 
@@ -138,20 +133,20 @@
 
   .when {
 
-    //width: 157px;
+    width: 157px;
 
-    //@media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       width: 204px;
-    //}
+    }
   }
 
   .where {
 
-    //width: 103px;
+    width: 103px;
 
-    //@media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       width: 134px;
-    //}
+    }
   }
 
 }
