@@ -85,7 +85,9 @@
 
  .logo {
 
-   font-size: 25px;
+   font-size: 20px;
+   letter-spacing: .2px !important;
+   //-webkit-text-size-adjust: 100% !important;
 
   font-weight: bold;
   color: white;
@@ -117,9 +119,11 @@
 
   h1 {
 
-   font-size: 25px;
+   font-size: 20px;
    background-image: none;
-   margin: 5px 0 0 0;
+   margin: 6px 0 0 0;
+   letter-spacing: .2px !important;
+   -webkit-text-size-adjust: 100% !important;
 
     @media (min-width: $screen-sm-min) {
       font-size: 35px;
@@ -185,8 +189,11 @@
     position: absolute;
     top: 41px;
     text-align: center;
+    padding: 5px 0 0 0;
+
 
     @media (min-width: $screen-sm-min) {
+      padding: 0px 0 0 0;
       top: 54px;
     }
   }
