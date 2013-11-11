@@ -93,7 +93,7 @@
 #info .blue {
   height: 48px; }
 #info .logo {
-  font-size: 23px;
+  font-size: 20px;
   letter-spacing: .2px !important;
   font-weight: bold;
   color: white;
@@ -116,10 +116,11 @@
         width: 407px;
         height: 102px; } }
   #info .logo h1 {
-    font-size: 23px;
+    font-size: 20px;
     background-image: none;
     margin: 6px 0 0 0;
-    letter-spacing: .2px !important; }
+    letter-spacing: .2px !important;
+    -webkit-text-size-adjust: 100% !important; }
     @media (min-width: 768px) {
       #info .logo h1 {
         font-size: 35px; } }
