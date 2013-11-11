@@ -381,7 +381,22 @@
       margin: 0;
       padding: 0; }
     #sponsorzy .sponsors-list ul li {
-      display: inline; }
+      display: block; }
+      #sponsorzy .sponsors-list ul li .logotype {
+        margin: auto; }
+      @media (min-width: 768px) {
+        #sponsorzy .sponsors-list ul li {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 10px; } }
+    #sponsorzy .sponsors-list figure {
+      margin-bottom: 35px; }
+    #sponsorzy .sponsors-list figcaption {
+      color: #b7b7b7;
+      margin-top: 10px;
+      font-weight: bold; }
+  #sponsorzy ul.silver-sponsors li {
+    display: inline-block; }
 
 footer {
   background-color: #fe6521;
@@ -396,6 +411,36 @@ footer {
     margin: 0 !important; }
   footer address a {
     color: white !important; }
+
+.logotype {
+  background-image: url(../assets/logos.png);
+  background-repeat: no-repeat;
+  border: 0; }
+
+.sabre {
+  background-position: 0px -111px;
+  width: 236px;
+  height: 82px; }
+
+.comarch {
+  background-position: 0px 0px;
+  width: 260px;
+  height: 39px; }
+
+.luxmed {
+  background-position: 0px -194px;
+  width: 150px;
+  height: 45px; }
+
+.sii {
+  background-position: 0px -244px;
+  width: 103px;
+  height: 72px; }
+
+.making-waves {
+  background-position: 0px -47px;
+  width: 220px;
+  height: 63px; }
 
 body {
   background-color: white; }

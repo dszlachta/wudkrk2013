@@ -20,7 +20,33 @@
     }
 
     ul li {
-      display: inline;
+      display: block;
+
+      .logotype {
+        margin: auto;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 10px;
+      }
+    }
+
+    figure {
+      margin-bottom: 35px;
+    }
+
+    figcaption {
+      color: #b7b7b7;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  }
+
+  ul.silver-sponsors {
+    li {
+      display: inline-block;
     }
   }
 
