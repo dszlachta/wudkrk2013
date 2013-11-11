@@ -159,10 +159,12 @@
   #info .logo .where {
     position: absolute;
     top: 41px;
-    text-align: center; }
+    text-align: center;
+    padding: 5px 0 0 0; }
     @media (min-width: 768px) {
       #info .logo .when,
       #info .logo .where {
+        padding: 0px 0 0 0;
         top: 54px; } }
   #info .logo .when {
     width: 157px;
