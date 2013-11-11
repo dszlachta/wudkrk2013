@@ -95,6 +95,7 @@
 #info .logo {
   font-size: 25px;
   letter-spacing: .2px !important;
+  -webkit-text-size-adjust: 100% !important;
   font-weight: bold;
   color: white;
   top: 0px; }
