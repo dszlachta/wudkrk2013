@@ -94,6 +94,7 @@
   height: 48px; }
 #info .logo {
   font-size: 25px;
+  letter-spacing: 2px !important;
   font-weight: bold;
   color: white;
   top: 0px; }
@@ -117,7 +118,8 @@
   #info .logo h1 {
     font-size: 25px;
     background-image: none;
-    margin: 5px 0 0 0; }
+    margin: 5px 0 0 0;
+    letter-spacing: 2px !important; }
     @media (min-width: 768px) {
       #info .logo h1 {
         font-size: 35px; } }
