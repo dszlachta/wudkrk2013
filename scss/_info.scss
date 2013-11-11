@@ -42,15 +42,21 @@
 
   }
 
-  h1 {
+  h2 {
     font-size: 18px;
     font-weight: normal;
     color: $wud_blue;
-    margin-top: 5px;
+
+    width: 318px;
+    margin: 5px auto 0 auto;
 
     //FIXME 
     text-align: left;
     background: none;
+
+    @media (min-width: $screen-sm-min) {
+      width: 407px;
+    }
   }
 
   .line {
@@ -81,18 +87,61 @@
 
    font-size: 25px;
 
-  @media (min-width: $screen-sm-min) {
-    font-size: 35px;
-  }
-
   font-weight: bold;
   color: white;
 
   top: 0px;
 
   @media (min-width: $screen-sm-min) {
+    font-size: 35px;
     position: absolute;
     top: 240px;
+  }
+
+  .logo-wrapper {
+   background-image: url(../assets/mobile/logo-bg.png);
+   background-repeat: no-repeat;
+
+    position: relative;
+    width: 312px;
+    height: 78px;
+
+    margin: auto;
+
+    @media (min-width: $screen-sm-min) {
+     background-image: url(../assets/logo-bg.png);
+     width: 407px;
+     height: 102px;
+    }
+  }
+
+  h1 {
+
+   font-size: 25px;
+   background-image: none;
+   margin: 5px 0 0 0;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 35px;
+    }
+
+   //display: block;
+  }
+
+  .header-wrapper {
+
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   width: 312px;
+   height: 37px;
+   vertical-align: center;
+
+   @media (min-width: $screen-sm-min) {
+     width: 407px;
+     height: 48px;
+   }
   }
 
   .line {
@@ -131,21 +180,36 @@
     margin-bottom: 10.5px;
   }
 
+  .when,
+  .where {
+    position: absolute;
+    top: 41px;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      top: 54px;
+    }
+  }
+
   .when {
 
     width: 157px;
+    left: 47px;
 
     @media (min-width: $screen-sm-min) {
       width: 204px;
+      left: 61px;
     }
   }
 
   .where {
 
     width: 103px;
+    left: 209px;
 
     @media (min-width: $screen-sm-min) {
       width: 134px;
+      left: 273px;
     }
   }
 

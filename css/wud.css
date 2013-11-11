@@ -72,13 +72,17 @@
       width: 705px;
       background-image: url(../assets/kompozycja1.png);
       margin: 74px auto 0 auto; } }
-#info h1 {
+#info h2 {
   font-size: 18px;
   font-weight: normal;
   color: #009dd9;
-  margin-top: 5px;
+  width: 318px;
+  margin: 5px auto 0 auto;
   text-align: left;
   background: none; }
+  @media (min-width: 768px) {
+    #info h2 {
+      width: 407px; } }
 #info .line {
   display: block; }
 #info .pink {
@@ -95,11 +99,39 @@
   top: 0px; }
   @media (min-width: 768px) {
     #info .logo {
-      font-size: 35px; } }
-  @media (min-width: 768px) {
-    #info .logo {
+      font-size: 35px;
       position: absolute;
       top: 240px; } }
+  #info .logo .logo-wrapper {
+    background-image: url(../assets/mobile/logo-bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 312px;
+    height: 78px;
+    margin: auto; }
+    @media (min-width: 768px) {
+      #info .logo .logo-wrapper {
+        background-image: url(../assets/logo-bg.png);
+        width: 407px;
+        height: 102px; } }
+  #info .logo h1 {
+    font-size: 25px;
+    background-image: none;
+    margin: 5px 0 0 0; }
+    @media (min-width: 768px) {
+      #info .logo h1 {
+        font-size: 35px; } }
+  #info .logo .header-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 312px;
+    height: 37px;
+    vertical-align: center; }
+    @media (min-width: 768px) {
+      #info .logo .header-wrapper {
+        width: 407px;
+        height: 48px; } }
   #info .logo .line {
     display: block; }
   #info .logo .line:nth-child(2) {
@@ -120,16 +152,29 @@
         width: 52px; } }
   #info .logo .cross img {
     margin-bottom: 10.5px; }
+  #info .logo .when,
+  #info .logo .where {
+    position: absolute;
+    top: 41px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #info .logo .when,
+      #info .logo .where {
+        top: 54px; } }
   #info .logo .when {
-    width: 157px; }
+    width: 157px;
+    left: 47px; }
     @media (min-width: 768px) {
       #info .logo .when {
-        width: 204px; } }
+        width: 204px;
+        left: 61px; } }
   #info .logo .where {
-    width: 103px; }
+    width: 103px;
+    left: 209px; }
     @media (min-width: 768px) {
       #info .logo .where {
-        width: 134px; } }
+        width: 134px;
+        left: 273px; } }
 
 #info aside {
   font-weight: bold;
