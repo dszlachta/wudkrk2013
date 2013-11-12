@@ -62,7 +62,7 @@
 #info .banner {
   margin: auto;
   background-repeat: no-repeat;
-  width: 375px;
+  width: 290px;
   height: 150px;
   background-image: url(../assets/mobile/kompozycja-375.png); }
   @media (min-width: 768px) {
@@ -75,7 +75,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #009dd9;
-  width: 318px;
+  width: 290px;
   margin: 5px auto 0 auto;
   text-align: left;
   background: none; }
@@ -99,15 +99,15 @@
   top: 0px; }
   @media (min-width: 768px) {
     #info .logo {
-      font-size: 35px;
+      font-size: 30px;
       position: absolute;
       top: 240px; } }
   #info .logo .logo-wrapper {
     background-image: url(../assets/mobile/logo-bg.png);
     background-repeat: no-repeat;
     position: relative;
-    width: 312px;
-    height: 78px;
+    width: 290px;
+    height: 73px;
     margin: auto; }
     @media (min-width: 768px) {
       #info .logo .logo-wrapper {
@@ -122,13 +122,13 @@
     -webkit-text-size-adjust: 100% !important; }
     @media (min-width: 768px) {
       #info .logo h1 {
-        font-size: 35px; } }
+        font-size: 30px; } }
   #info .logo .header-wrapper {
     position: absolute;
     top: 0;
     left: 0;
-    width: 312px;
-    height: 37px;
+    width: 290px;
+    height: 35px;
     vertical-align: center; }
     @media (min-width: 768px) {
       #info .logo .header-wrapper {
@@ -157,24 +157,24 @@
   #info .logo .when,
   #info .logo .where {
     position: absolute;
-    top: 41px;
+    top: 38px;
     text-align: center;
     padding: 5px 0 0 0; }
     @media (min-width: 768px) {
       #info .logo .when,
       #info .logo .where {
         padding: 0px 0 0 0;
-        top: 54px; } }
+        top: 56px; } }
   #info .logo .when {
-    width: 157px;
-    left: 47px; }
+    width: 147px;
+    left: 43px; }
     @media (min-width: 768px) {
       #info .logo .when {
         width: 204px;
         left: 61px; } }
   #info .logo .where {
-    width: 103px;
-    left: 209px; }
+    width: 96px;
+    left: 194px; }
     @media (min-width: 768px) {
       #info .logo .where {
         width: 134px;
@@ -247,7 +247,7 @@
     position: relative;
     margin: auto; }
   #miejsce .map-wrapper, #miejsce .map {
-    width: 380px; }
+    width: 290px; }
     @media (min-width: 992px) {
       #miejsce .map-wrapper, #miejsce .map {
         width: 863px; } }
@@ -297,16 +297,16 @@
         background-image: url(../assets/znacznik_tram.png); } }
   #miejsce .parking {
     background-image: url(../assets/znacznik_parking.png);
-    top: -5px;
-    left: 36px; }
+    top: -22px;
+    left: 22px; }
     @media (min-width: 992px) {
       #miejsce .parking {
         top: 79px;
         left: 128px; } }
   #miejsce .wudkrk {
     background-image: url(../assets/znacznik_wudkrk.png);
-    top: -50px;
-    left: 130px; }
+    top: -60px;
+    left: 94px; }
     @media (min-width: 992px) {
       #miejsce .wudkrk {
         top: -4px;
@@ -316,7 +316,7 @@
     display: table;
     border-spacing: 2px;
     margin: 0px auto 30px auto;
-    width: 310px; }
+    width: 290px; }
     @media (min-width: 992px) {
       #miejsce .bus-stop,
       #miejsce .tram-stop {
