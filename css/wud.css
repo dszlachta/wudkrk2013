@@ -9,7 +9,6 @@
     .navbar button.navbar-toggle:hover {
       background-color: white !important; }
   .navbar .navbar-brand img {
-    width: 55px;
     height: 36px;
     margin: 6px 12px; }
     @media (min-width: 768px) {
@@ -198,14 +197,19 @@
     font-size: 35px; }
   #info aside p:nth-child(2) {
     font-size: 20px; }
-  #info aside p.registration {
+  #info aside .registration {
     border-top: 1px solid #e5e5e5;
     font-size: 20px;
     margin: 5px 0 0 0;
     padding: 5px 0 0 0; }
     @media (min-width: 768px) {
-      #info aside p.registration {
+      #info aside .registration {
         text-align: left; } }
+  #info aside .orange {
+    font-size: 20px;
+    padding: 5px 13px;
+    background-color: #fe6521;
+    color: white; }
 
 #info .description {
   font-size: 20px; }
@@ -377,6 +381,11 @@
 
 #sponsorzy {
   border-bottom: 0; }
+  #sponsorzy ul.org li {
+    margin-bottom: 50px; }
+    @media (min-width: 768px) {
+      #sponsorzy ul.org li {
+        margin-bottom: 0px; } }
   #sponsorzy .sponsors-list {
     padding: 16px 12px;
     margin-bottom: 40px;
@@ -493,6 +502,11 @@ section {
     height: 46px;
     background-color: #009dd9;
     display: block; }
+
+#miejsce,
+#program,
+#prelegenci {
+  background-image: url(../assets/kratka.png); }
 
 .dummy-button i {
   padding: 5px 13px;
