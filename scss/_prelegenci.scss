@@ -4,6 +4,8 @@ $p_margins: 20px;
 
 #prelegenci {
 
+  padding-bottom: 40px;
+
   .p-row {
      @media (min-width: $screen-sm-min) {
       max-width: ($p_padding*2 + $p_margins + $p_width)*3;
@@ -41,6 +43,10 @@ $p_margins: 20px;
        //width: auto;
        //margin: auto;
      }
+   }
+
+   section {
+     border-bottom: 0;
    }
 
    section h1 {
