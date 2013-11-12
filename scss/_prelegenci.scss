@@ -1,9 +1,73 @@
+$p_width: 276px;
+$p_padding: 12px;
+$p_margins: 20px;
+
 #prelegenci {
+
+  .p-row {
+     @media (min-width: $screen-sm-min) {
+      max-width: ($p_padding*2 + $p_margins + $p_width)*3;
+      margin: auto;
+    }
+  }
 
    figure img {
      border: 1px solid $nav_border;
      border-radius: 100%;
+     background-color: white;
      padding: 8px;
+
+     margin-top: -104px;
+     //position: absolute;
+     //top: -104px;
+     //left: 57px;
+   }
+
+   //section {
+   .p-wrapper {
+     vertical-align: top;
+     text-align: center;
+     //width: 276px;
+     border: 1px solid $nav_border;
+     background-color: white;
+     //position: relative;
+     //margin: 140px auto 20px auto;
+     margin-top: 140px;
+     padding: 12px;
+
+     @media (min-width: $screen-sm-min) {
+       //display: inline-block;
+       //margin: 104px 10px 20px 10px;
+       //width: auto;
+       //margin: auto;
+     }
+   }
+
+   section h1 {
+     background-image: none;
+     border-bottom: 1px solid $nav_border;
+     padding-bottom: 20px;
+
+     height: auto;
+     width: auto;
+     margin: 20px 0 30px 0;
+
+     font-size: 18px;
+     color: white;
+
+     span {
+       display: inline;
+       background-color: $wud_pink;
+       padding: 5px 16px;
+
+       width: auto;
+       height: auto;
+     }
+   }
+
+   section .bio {
+     color: #464646;
+     text-align: left;
    }
 
 }
