@@ -494,6 +494,11 @@ section {
     background-color: #009dd9;
     display: block; }
 
+#miejsce,
+#program,
+#prelegenci {
+  background-image: url(../assets/kratka.png); }
+
 .dummy-button i {
   padding: 5px 13px;
   font-style: normal;
