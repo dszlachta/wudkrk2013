@@ -3,7 +3,47 @@
    figure img {
      border: 1px solid $nav_border;
      border-radius: 100%;
+     background-color: white;
      padding: 8px;
+
+     position: absolute;
+     top: -104px;
+     left: 57px;
+   }
+
+   section {
+     display: inline-block;
+     width: 276px;
+     border: 1px solid $nav_border;
+     position: relative;
+     margin: 104px 10px 20px 10px;
+     padding: 12px;
+   }
+
+   section h1 {
+     background-image: none;
+     border-bottom: 1px solid $nav_border;
+     padding-bottom: 20px;
+
+     height: auto;
+     width: auto;
+     margin: 64px 0 30px 0;
+
+     font-size: 18px;
+     color: white;
+
+     span {
+       display: inline;
+       background-color: $wud_pink;
+       padding: 5px 16px;
+
+       width: auto;
+       height: auto;
+     }
+   }
+
+   section div {
+     color: #464646;
    }
 
 }
