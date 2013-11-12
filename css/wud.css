@@ -198,6 +198,14 @@
     font-size: 35px; }
   #info aside p:nth-child(2) {
     font-size: 20px; }
+  #info aside p.registration {
+    border-top: 1px solid #e5e5e5;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    padding: 5px 0 0 0; }
+    @media (min-width: 768px) {
+      #info aside p.registration {
+        text-align: left; } }
 
 #info .description {
   font-size: 20px; }
