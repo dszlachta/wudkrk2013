@@ -24,7 +24,7 @@
         <script src="js/jquery-2.0.3.min.js"></script>
 
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navigation">
       <div id="fb-root"></div>
 
       <!-- Facebook Widget JS -->
@@ -37,7 +37,7 @@
       }(document, 'script', 'facebook-jssdk'));</script>
       <!-- end -->
 
-      <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <header id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation">

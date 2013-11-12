@@ -78,6 +78,11 @@ $navbar_link_margin_left: 20px;
     }
 }
 
+.navbar-default .navbar-nav>.active>a {
+    background-color: $wud_orange !important;
+    color: white !important;
+}
+
 .navbar-default .navbar-nav>li>a {
 }
 
