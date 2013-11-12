@@ -329,7 +329,8 @@
       display: table-cell;
       border-width: 0px 1px 1px 1px;
       border-style: solid;
-      border-color: #e5e5e5; }
+      border-color: #e5e5e5;
+      background-color: white; }
       @media (min-width: 992px) {
         #miejsce .bus-stop .details,
         #miejsce .tram-stop .details {
@@ -463,20 +464,22 @@ footer {
   width: 220px;
   height: 63px; }
 
+@media (min-width: 768px) {
+  #prelegenci .p-row {
+    max-width: 960px;
+    margin: auto; } }
 #prelegenci figure img {
   border: 1px solid #e5e5e5;
   border-radius: 100%;
   background-color: white;
   padding: 8px;
-  position: absolute;
-  top: -104px;
-  left: 57px; }
-#prelegenci section {
-  display: inline-block;
-  width: 276px;
+  margin-top: -104px; }
+#prelegenci .p-wrapper {
+  vertical-align: top;
+  text-align: center;
   border: 1px solid #e5e5e5;
-  position: relative;
-  margin: 104px 10px 20px 10px;
+  background-color: white;
+  margin-top: 140px;
   padding: 12px; }
 #prelegenci section h1 {
   background-image: none;
@@ -484,7 +487,7 @@ footer {
   padding-bottom: 20px;
   height: auto;
   width: auto;
-  margin: 64px 0 30px 0;
+  margin: 20px 0 30px 0;
   font-size: 18px;
   color: white; }
   #prelegenci section h1 span {
@@ -493,8 +496,9 @@ footer {
     padding: 5px 16px;
     width: auto;
     height: auto; }
-#prelegenci section div {
-  color: #464646; }
+#prelegenci section .bio {
+  color: #464646;
+  text-align: left; }
 
 body {
   background-color: white; }

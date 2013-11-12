@@ -163,6 +163,7 @@ $oleandry_left: 641px;
       border-width: 0px 1px 1px 1px;
       border-style: solid;
       border-color: $nav_border;
+      background-color: white;
 
       @media (min-width: $screen-md-min) {
           display: block;

@@ -1,4 +1,15 @@
+$p_width: 276px;
+$p_padding: 12px;
+$p_margins: 20px;
+
 #prelegenci {
+
+  .p-row {
+     @media (min-width: $screen-sm-min) {
+      max-width: ($p_padding*2 + $p_margins + $p_width)*3;
+      margin: auto;
+    }
+  }
 
    figure img {
      border: 1px solid $nav_border;
@@ -6,18 +17,30 @@
      background-color: white;
      padding: 8px;
 
-     position: absolute;
-     top: -104px;
-     left: 57px;
+     margin-top: -104px;
+     //position: absolute;
+     //top: -104px;
+     //left: 57px;
    }
 
-   section {
-     display: inline-block;
-     width: 276px;
+   //section {
+   .p-wrapper {
+     vertical-align: top;
+     text-align: center;
+     //width: 276px;
      border: 1px solid $nav_border;
-     position: relative;
-     margin: 104px 10px 20px 10px;
+     background-color: white;
+     //position: relative;
+     //margin: 140px auto 20px auto;
+     margin-top: 140px;
      padding: 12px;
+
+     @media (min-width: $screen-sm-min) {
+       //display: inline-block;
+       //margin: 104px 10px 20px 10px;
+       //width: auto;
+       //margin: auto;
+     }
    }
 
    section h1 {
@@ -27,7 +50,7 @@
 
      height: auto;
      width: auto;
-     margin: 64px 0 30px 0;
+     margin: 20px 0 30px 0;
 
      font-size: 18px;
      color: white;
@@ -42,8 +65,9 @@
      }
    }
 
-   section div {
+   section .bio {
      color: #464646;
+     text-align: left;
    }
 
 }
