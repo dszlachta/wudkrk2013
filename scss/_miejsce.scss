@@ -47,7 +47,7 @@ $oleandry_left: 641px;
 
   .map-wrapper, .map {
 
-    width: 380px;
+    width: 290px;
 
 
     @media (min-width: $screen-md-min) {
@@ -122,8 +122,8 @@ $oleandry_left: 641px;
 
   .parking {
     background-image: url(../assets/znacznik_parking.png);
-    top: -5px;
-    left: 36px;
+    top: -22px;
+    left: 22px;
 
     @media (min-width: $screen-md-min) {
       top: 79px;
@@ -133,8 +133,8 @@ $oleandry_left: 641px;
 
   .wudkrk {
     background-image: url(../assets/znacznik_wudkrk.png);
-    top: -50px;
-    left: 130px;
+    top: -60px;
+    left: 94px;
 
     @media (min-width: $screen-md-min) {
       top: -4px;
@@ -148,7 +148,7 @@ $oleandry_left: 641px;
     display: table;
     border-spacing: 2px;
     margin: 0px auto 30px auto;
-    width: 310px;
+    width: 290px;
 
     @media (min-width: $screen-md-min) {
       width: 190px;
