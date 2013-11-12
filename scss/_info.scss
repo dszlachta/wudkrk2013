@@ -249,7 +249,7 @@
     font-size: 20px;
   }
 
-  p.registration {
+  .registration {
     border-top: 1px solid $nav_border;
     font-size: 20px;
     margin: 5px 0 0 0;
@@ -258,6 +258,13 @@
     @media (min-width: $screen-sm-min) {
       text-align: left;
     }
+  }
+
+  .orange {
+    font-size: 20px;
+    padding: 5px 13px;
+    background-color: $wud_orange;
+    color: white;
   }
 
 }
