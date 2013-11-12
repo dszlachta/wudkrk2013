@@ -377,6 +377,11 @@
 
 #sponsorzy {
   border-bottom: 0; }
+  #sponsorzy ul.org li {
+    margin-bottom: 50px; }
+    @media (min-width: 768px) {
+      #sponsorzy ul.org li {
+        margin-bottom: 0px; } }
   #sponsorzy .sponsors-list {
     padding: 16px 12px;
     margin-bottom: 40px;

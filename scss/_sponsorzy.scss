@@ -2,6 +2,14 @@
 
   border-bottom: 0;
 
+  ul.org li {
+    margin-bottom: 50px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 0px;
+    }
+  }
+
   .sponsors-list {
     padding: 16px 12px;
     margin-bottom: 40px;
