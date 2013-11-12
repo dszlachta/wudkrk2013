@@ -198,6 +198,14 @@
     font-size: 35px; }
   #info aside p:nth-child(2) {
     font-size: 20px; }
+  #info aside p.registration {
+    border-top: 1px solid #e5e5e5;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    padding: 5px 0 0 0; }
+    @media (min-width: 768px) {
+      #info aside p.registration {
+        text-align: left; } }
 
 #info .description {
   font-size: 20px; }
@@ -371,9 +379,10 @@
   border-bottom: 0; }
   #sponsorzy .sponsors-list {
     padding: 16px 12px;
+    margin-bottom: 40px;
     border-top: 1px solid #e5e5e5; }
     #sponsorzy .sponsors-list h2 {
-      margin-top: 0px;
+      margin: 0px 0 110px 0;
       font-size: 24px; }
     #sponsorzy .sponsors-list ul {
       text-align: center;
@@ -388,7 +397,7 @@
         #sponsorzy .sponsors-list ul li {
           display: inline-block;
           vertical-align: top;
-          margin: 0 10px; } }
+          margin: 0 50px; } }
     #sponsorzy .sponsors-list figure {
       margin-bottom: 35px; }
     #sponsorzy .sponsors-list figcaption {
@@ -417,10 +426,13 @@ footer {
   background-repeat: no-repeat;
   border: 0; }
 
+.logo-wrapper {
+  height: 72px; }
+
 .sabre {
-  background-position: 0px -111px;
-  width: 236px;
-  height: 82px; }
+  background-position: 10px -130px;
+  width: 235px;
+  height: 52px; }
 
 .comarch {
   background-position: 0px 0px;

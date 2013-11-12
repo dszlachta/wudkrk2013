@@ -4,11 +4,12 @@
 
   .sponsors-list {
     padding: 16px 12px;
+    margin-bottom: 40px;
 
     border-top: 1px solid $nav_border;
 
     h2 {
-      margin-top: 0px;
+      margin: 0px 0 110px 0;
       font-size: 24px;
     }
 
@@ -20,7 +21,34 @@
     }
 
     ul li {
-      display: inline;
+      display: block;
+
+      .logotype {
+        margin: auto;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        display: inline-block;
+        vertical-align: top;
+        //margin: 0 10px;
+        margin: 0 50px;
+      }
+    }
+
+    figure {
+      margin-bottom: 35px;
+    }
+
+    figcaption {
+      color: #b7b7b7;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  }
+
+  ul.silver-sponsors {
+    li {
+      display: inline-block;
     }
   }
 
