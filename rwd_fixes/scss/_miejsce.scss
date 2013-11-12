@@ -1,0 +1,257 @@
+$bus_stop_width: 190px;
+$cracovia_top: 330px;
+$cracovia_left: -50px;
+
+$blonia_top: 341px;
+$blonia_left: 230px;
+
+$oleandry_top: 219px;
+$oleandry_left: 641px;
+
+@mixin cracovia {
+  top: $cracovia_top - 14px;
+  left: $cracovia_left + $bus_stop_width - 20px;
+}
+
+@mixin blonia {
+  top: $blonia_top - 14px;
+  left: $blonia_left + $bus_stop_width - 20px;
+}
+
+@mixin oleandry {
+  top: $oleandry_top - 14px;
+  left: $oleandry_left + $bus_stop_width - 20px;
+}
+
+
+
+#miejsce {
+
+  address {
+    font-size: 24px;
+    font-weight: bold;
+
+    text-align: center;
+    margin-bottom: 85px;
+
+
+    @media (min-width: $screen-md-min) {
+      font-size: 34px;
+    }
+  }
+
+  .map-wrapper {
+    position: relative;
+    margin: auto;
+  }
+
+  .map-wrapper, .map {
+
+    width: 290px;
+
+
+    @media (min-width: $screen-md-min) {
+      width: 863px;
+    }
+  }
+
+  .map {
+
+    height: 214px;
+    background-repeat: no-repeat;
+    margin: 0 0 52px 0;
+
+    background-image: url(../assets/mobile/stadion-380.png);
+
+    @media (min-width: $screen-md-min) {
+      height: 487px;
+      background-image: url(../assets/stadion.png);
+      z-index: 1;
+    }
+
+  }
+
+  .marker {
+    width: 66px;
+    height: 104px;
+
+    z-index: 10;
+    position: absolute;
+  
+    background-repeat: no-repeat;
+  }
+
+  .bus-stop .marker,
+  .tram-stop .marker {
+
+    display: table-cell;
+    z-index: 0;
+    position: static;
+    
+    background-color: $wud_blue;
+    background-position: center;
+
+    border: 1px solid;
+
+    @media (min-width: $screen-md-min) {
+      background-color: transparent;
+      border: 0;
+      display: block;
+      z-index: 10;
+      position: absolute;
+      top: -14px;
+      right: -48px;
+    }
+  }
+
+  .bus {
+    background-image: url(../assets/bus.png);
+
+    @media (min-width: $screen-md-min) {
+      background-image: url(../assets/znacznik_bus.png);
+    }
+  }
+
+  .tram {
+    background-image: url(../assets/tram.png);
+
+    @media (min-width: $screen-md-min) {
+      background-image: url(../assets/znacznik_tram.png);
+    }
+  }
+
+  .parking {
+    background-image: url(../assets/znacznik_parking.png);
+    top: -22px;
+    left: 22px;
+
+    @media (min-width: $screen-md-min) {
+      top: 79px;
+      left: 128px;
+    }
+  }
+
+  .wudkrk {
+    background-image: url(../assets/znacznik_wudkrk.png);
+    top: -60px;
+    left: 94px;
+
+    @media (min-width: $screen-md-min) {
+      top: -4px;
+      left: 333px;
+    }
+  }
+
+  .bus-stop,
+  .tram-stop {
+
+    display: table;
+    border-spacing: 2px;
+    margin: 0px auto 30px auto;
+    width: 290px;
+
+    @media (min-width: $screen-md-min) {
+      width: 190px;
+      position: absolute;
+      z-index: 9;
+      display: block;
+    }
+
+    .details {
+      display: table-cell;
+
+      border-width: 0px 1px 1px 1px;
+      border-style: solid;
+      border-color: $nav_border;
+      background-color: white;
+
+      @media (min-width: $screen-md-min) {
+          display: block;
+      }
+    }
+
+    .name {
+      background-color: $wud_pink;
+      padding: 10px 30px 10px 12px;
+      //margin: -1px;
+      border: 1px solid $wud_pink;
+    }
+
+    .name b {
+      color: white;
+      font-size: 20px;
+    }
+
+    .lines {
+      background-color: white;
+
+      font-size: 14px;
+      font-weight: bold;
+
+      padding: 9px 7px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    ul li {
+      display: inline;
+    }
+
+    ul li:after {
+      content: ",";
+    }
+
+    ul li:last-child:after {
+      content: ".";
+    }
+  }
+
+  .tram-stop {
+    ul {
+      display: inline-block;
+    }
+  }
+
+  /*
+  .marker.cracovia {
+    @include cracovia;
+  }
+  */
+
+  .bus-stop.cracovia {
+    top: $cracovia_top;
+    left: $cracovia_left;
+
+    @media (min-width: $screen-md-min) {
+      width: 200px;
+    }
+  }
+
+  /*
+  .marker.blonia {
+    @include blonia;
+  }
+  */
+
+  .bus-stop.blonia {
+    top: $blonia_top;
+    left: $blonia_left;
+  }
+
+  /*
+  .marker.oleandry {
+    @include oleandry;
+  }
+   */
+
+  .tram-stop.oleandry {
+    top: $oleandry_top;
+    left: $oleandry_left;
+  }
+
+}
