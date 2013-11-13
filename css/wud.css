@@ -507,6 +507,13 @@ footer {
   #prelegenci section .bio {
     color: #464646;
     text-align: left; }
+  #prelegenci .placeholder {
+    font-size: 20px;
+    padding: 5px 13px;
+    background-color: #fe6521;
+    color: white;
+    text-align: center;
+    margin-top: 40px; }
 
 body {
   background-color: white; }
