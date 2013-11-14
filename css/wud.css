@@ -74,7 +74,8 @@
       height: 468px;
       width: 705px;
       background-image: url(../assets/kompozycja1.png);
-      margin: 74px auto 0 auto; } }
+      margin: 74px auto 0 auto;
+      background-position-y: 40px; } }
 #info h2 {
   font-size: 18px;
   font-weight: normal;
@@ -193,7 +194,8 @@
       position: absolute;
       top: 300px;
       text-align: right;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      margin-top: 20px; } }
   #info aside p {
     margin: 0; }
   #info aside p:first-child {
@@ -209,6 +211,8 @@
       #info aside .registration {
         text-align: left; } }
   #info aside .orange {
+    display: block;
+    text-align: center;
     font-size: 20px;
     padding: 5px 13px;
     background-color: #fe6521;

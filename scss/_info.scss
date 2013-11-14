@@ -38,6 +38,7 @@
       width: 705px;
       background-image: url(../assets/kompozycja1.png);
       margin: 74px auto 0 auto;
+      background-position-y: 40px;
     }
 
   }
@@ -235,6 +236,7 @@
     //right: 0px;
     text-align: right;
     margin-bottom: 0;
+    margin-top: 20px;
   }
 
   p {
@@ -261,6 +263,8 @@
   }
 
   .orange {
+    display: block;
+    text-align:center;
     font-size: 20px;
     padding: 5px 13px;
     background-color: $wud_orange;
