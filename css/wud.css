@@ -423,6 +423,49 @@
       font-weight: bold; }
   #sponsorzy ul.silver-sponsors li {
     display: inline-block; }
+  #sponsorzy .partners ul li, #sponsorzy .patrons ul li {
+    margin: 0 0; }
+  #sponsorzy .partners ul li img, #sponsorzy .patrons ul li img {
+    margin: auto; }
+  @media (min-width: 768px) {
+    #sponsorzy .partners ul li img, #sponsorzy .patrons ul li img {
+      margin: 0; } }
+  #sponsorzy .partners img {
+    background-image: url(../assets/sponsors/partners.png);
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 75px; }
+  #sponsorzy .krakowski-floating {
+    background-position: 0px 0px; }
+  #sponsorzy .ux-pin {
+    background-position: 0px -75px; }
+  #sponsorzy .brand24 {
+    background-position: 0px -150px; }
+  #sponsorzy .patrons img {
+    background-image: url(../assets/sponsors/patrons.png);
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 75px; }
+  #sponsorzy .ak74 {
+    background-position: 0px 0px; }
+  #sponsorzy .zombie {
+    background-position: 0px -75px; }
+  #sponsorzy .uxbite {
+    background-position: 0px -150px; }
+  #sponsorzy .kultura {
+    background-position: 0px -225px; }
+  #sponsorzy .eurostudent {
+    background-position: 0px -300px; }
+  #sponsorzy .klucz {
+    background-position: 0px -375px; }
+  #sponsorzy .webcrea {
+    background-position: 0px -450px; }
+  #sponsorzy .ggc {
+    background-position: 0px -525px; }
+  #sponsorzy .crossweb {
+    background-position: 0px -600px; }
+  #sponsorzy .wkrakowie {
+    background-position: 0px -675px; }
 
 footer {
   background-color: #fe6521;
