@@ -608,6 +608,10 @@ section {
 #prelegenci {
   background-image: url(../assets/kratka.png); }
 
+.register {
+  font-size: 20px;
+  border-top: 1px solid #e5e5e5; }
+
 .dummy-button i {
   padding: 5px 13px;
   font-style: normal;
