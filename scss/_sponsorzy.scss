@@ -61,7 +61,17 @@
   }
 
   .partners ul li, .patrons ul li {
-    margin: 0 0; }
+    margin: 0 0; 
+
+    @media (min-width: 768px) {
+      margin: 0 10px 0 0;
+
+      &:last-child {
+        margin: 0px;
+      }
+    }
+  }
+
   .partners ul li img, .patrons ul li img {
     margin: auto; }
     @media (min-width: 768px) {
@@ -78,6 +88,8 @@
     background-position: 0px -75px; }
   .brand24 {
     background-position: 0px -150px; }
+  .manko {
+    background-position: 0px -225px; }
   .patrons img {
     background-image: url(../assets/sponsors/patrons.png);
     background-repeat: no-repeat;

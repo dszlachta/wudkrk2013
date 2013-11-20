@@ -425,6 +425,11 @@
     display: inline-block; }
   #sponsorzy .partners ul li, #sponsorzy .patrons ul li {
     margin: 0 0; }
+    @media (min-width: 768px) {
+      #sponsorzy .partners ul li, #sponsorzy .patrons ul li {
+        margin: 0 10px 0 0; }
+        #sponsorzy .partners ul li:last-child, #sponsorzy .patrons ul li:last-child {
+          margin: 0px; } }
   #sponsorzy .partners ul li img, #sponsorzy .patrons ul li img {
     margin: auto; }
   @media (min-width: 768px) {
@@ -441,6 +446,8 @@
     background-position: 0px -75px; }
   #sponsorzy .brand24 {
     background-position: 0px -150px; }
+  #sponsorzy .manko {
+    background-position: 0px -225px; }
   #sponsorzy .patrons img {
     background-image: url(../assets/sponsors/patrons.png);
     background-repeat: no-repeat;
