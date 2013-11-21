@@ -446,7 +446,7 @@
     background-position: 0px -75px; }
   #sponsorzy .brand24 {
     background-position: 0px -150px; }
-  #sponsorzy .manko {
+  #sponsorzy .tools {
     background-position: 0px -225px; }
   #sponsorzy .patrons img {
     background-image: url(../assets/sponsors/patrons.png);
@@ -473,6 +473,8 @@
     background-position: 0px -600px; }
   #sponsorzy .wkrakowie {
     background-position: 0px -675px; }
+  #sponsorzy .manko {
+    background-position: 0px -750px; }
 
 footer {
   background-color: #fe6521;
