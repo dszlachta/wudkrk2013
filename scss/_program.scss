@@ -1,0 +1,62 @@
+#program {
+
+  table {
+    width: 100%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 8px;
+
+    font-size: 18px;
+  }
+
+  tr td {
+    vertical-align: top;
+    background-color: white;
+  }
+
+  tr td span, div {
+    display: inline-block;
+    width: 100%;
+  }
+
+  tr td:first-child span {
+    text-align: center;
+  }
+
+  tr td:first-child span,
+  tr td:nth-child(2) div {
+    border: 1px solid $nav_border;
+    padding: 15px;
+  }
+
+  tr.highlight td {
+    background-color: $wud_orange;
+  }
+
+  tr.highlight td,
+  tr.impreza td{
+    vertical-align: middle;
+    border: 0;
+    color: white;
+    font-weight: bold;
+  }
+
+  tr.highlight, tr.impreza {
+    td span {
+      border: 0;
+    }
+
+    td:nth-child(2) {
+      padding-left: 15px;
+    }
+  }
+
+  tr.impreza td {
+    background-color: $wud_blue;
+  }
+
+  p {
+    margin-top: 30px;
+  }
+
+}
