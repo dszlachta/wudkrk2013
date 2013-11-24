@@ -448,6 +448,10 @@
     background-position: 0px -150px; }
   #sponsorzy .tools {
     background-position: 0px -225px; }
+  #sponsorzy .helion {
+    background-position: 0px -300px; }
+  #sponsorzy .hello {
+    background-position: 0px -375px; }
   #sponsorzy .patrons img {
     background-image: url(../assets/sponsors/patrons.png);
     background-repeat: no-repeat;
@@ -571,15 +575,14 @@ footer {
     margin-top: 40px; }
 
 #program table {
-  width: 100%;
   margin: auto;
   border-collapse: separate;
   border-spacing: 8px;
   font-size: 18px; }
 #program tr td {
-  vertical-align: top;
-  background-color: white; }
-#program tr td span, #program div {
+  vertical-align: top; }
+#program tr td span, #program tr td div {
+  background-color: white;
   display: inline-block;
   width: 100%; }
 #program tr td:first-child span {
@@ -590,6 +593,8 @@ footer {
   padding: 15px; }
 #program tr.highlight td {
   background-color: #fe6521; }
+  #program tr.highlight td span, #program tr.highlight td div {
+    background-color: #fe6521; }
 #program tr.highlight td,
 #program tr.impreza td {
   vertical-align: middle;
@@ -602,6 +607,8 @@ footer {
   padding-left: 15px; }
 #program tr.impreza td {
   background-color: #009dd9; }
+  #program tr.impreza td span, #program tr.impreza td div {
+    background-color: #009dd9; }
 #program p {
   margin-top: 30px; }
 

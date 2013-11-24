@@ -1,7 +1,6 @@
 #program {
 
   table {
-    width: 100%;
     margin: auto;
     border-collapse: separate;
     border-spacing: 8px;
@@ -11,10 +10,10 @@
 
   tr td {
     vertical-align: top;
-    background-color: white;
   }
 
-  tr td span, div {
+  tr td span, tr td div {
+    background-color: white;
     display: inline-block;
     width: 100%;
   }
@@ -31,6 +30,9 @@
 
   tr.highlight td {
     background-color: $wud_orange;
+    span, div {
+      background-color: $wud_orange;
+    }
   }
 
   tr.highlight td,
@@ -53,6 +55,9 @@
 
   tr.impreza td {
     background-color: $wud_blue;
+    span, div {
+      background-color: $wud_blue;
+    }
   }
 
   p {
