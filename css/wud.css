@@ -576,6 +576,7 @@ footer {
     margin-top: 40px; }
 
 #program table {
+  width: 90%;
   margin: auto;
   border-collapse: separate;
   border-spacing: 8px;
@@ -619,7 +620,8 @@ footer {
   font-size: 16px;
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid #e5e5e5; }
+  border-top: 1px solid #e5e5e5;
+  display: none; }
 #program .toggle {
   appearance: none;
   -moz-appearance: none;
@@ -630,6 +632,48 @@ footer {
     content: 'ukryj szczegóły'; }
   #program .toggle:checked ~ .description {
     display: block; }
+#program button.showMore {
+  border: 0;
+  background-color: white;
+  color: #009dd9;
+  font-size: 15px;
+  border-radius: 0; }
+
+#warsztaty section {
+  border-bottom: 0; }
+  #warsztaty section h1 {
+    background: none;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 28px 0; }
+  #warsztaty section .description {
+    border: 1px solid #e5e5e5;
+    padding: 20px 12px;
+    margin: 6px; }
+  #warsztaty section .wrapper {
+    width: 100%;
+    display: table;
+    border-spacing: 5px; }
+    #warsztaty section .wrapper .name, #warsztaty section .wrapper .time {
+      display: table-cell;
+      font-size: 18px;
+      text-align: center; }
+    #warsztaty section .wrapper .name {
+      background-color: #fc2077;
+      color: white;
+      width: 70%;
+      min-width: 178px;
+      height: 34px; }
+    #warsztaty section .wrapper .time {
+      background-color: #009dd9;
+      color: white;
+      font-weight: bold;
+      min-width: 119px; }
+    #warsztaty section .wrapper .name b, #warsztaty section .wrapper .time span {
+      margin-top: 5px;
+      display: block; }
 
 body {
   background-color: white; }

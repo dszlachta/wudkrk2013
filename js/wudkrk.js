@@ -8,6 +8,29 @@
 
     });
 
+    // show more
+
+   $('#program div.description').each(function() {
+
+       var $d = $(this);
+       var $p = $d.prev('p');
+
+       var $b = $('<button>').addClass('showMore').addClass('pull-right').text('zobacz szczegóły').click(function() {
+
+           $(this).toggleClass('active');
+
+           if ( $(this).hasClass('active') )
+               $(this).text('ukryj szczegóły');
+           else 
+               $(this).text('zobacz szczegóły');
+
+           $d.fadeToggle();
+       });
+
+       $p.append($b);
+
+   });
+
 })();
 
 $(function() {

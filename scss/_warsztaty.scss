@@ -1,0 +1,59 @@
+#warsztaty {
+
+  section {
+
+    border-bottom: 0;
+
+    h1 {
+      background: none;
+      color: black;
+      font-size: 20px;
+      text-align: left;
+
+      border-bottom: 1px solid $nav_border;
+      margin: 0 0 28px 0;
+    }
+
+    .description {
+      border: 1px solid $nav_border;
+      padding: 20px 12px;
+      margin: 6px;
+    }
+
+    .wrapper {
+
+      width: 100%;
+      display: table;
+      border-spacing: 5px;
+
+      .name, .time {
+        display: table-cell;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .name {
+        background-color: $wud_pink;
+        color: white;
+        width: 70%;
+        min-width: 178px;
+        height: 34px;
+      }
+
+      .time {
+        background-color: $wud_blue;
+        color: white;
+        font-weight: bold;
+        min-width: 119px;
+      }
+
+      .name b, .time span {
+        margin-top: 5px;
+        display: block;
+      }
+
+    }
+
+  }
+
+}
