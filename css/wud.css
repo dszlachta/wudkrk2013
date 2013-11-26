@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .navbar {
   background-color: white;
   border-bottom: 1px solid #e5e5e5; }
@@ -586,34 +585,35 @@ footer {
 @media (min-width: 768px) {
   #program tr td:first-child {
     min-width: 150px; } }
-#program tr td span, #program tr td div:first-child {
+#program tr td span, #program tr td div.wrapper-info {
   background-color: white;
   display: inline-block;
   width: 100%; }
 #program tr td:first-child span {
   text-align: center; }
 #program tr td:first-child span,
-#program tr td:nth-child(2) div:first-child {
+#program tr td:nth-child(2) div.wrapper-info {
   border: 1px solid #e5e5e5;
   padding: 15px; }
 #program tr.highlight td {
+  color: white;
   background-color: #fe6521; }
-  #program tr.highlight td span, #program tr.highlight td div {
+  #program tr.highlight td span, #program tr.highlight td div.wrapper-info {
     background-color: #fe6521; }
+#program tr.highlight td.wrapper-info {
+  padding-left: 15px; }
 #program tr.highlight td,
-#program tr.impreza td {
+#program tr.impreza td > div.wrapper-info {
   vertical-align: middle;
   border: 0;
   color: white;
   font-weight: bold; }
 #program tr.highlight td span, #program tr.impreza td span {
   border: 0; }
-#program tr.highlight td:nth-child(2), #program tr.impreza td:nth-child(2) {
-  padding-left: 15px; }
-#program tr.impreza td {
+#program tr.impreza td:first-child span, #program tr.impreza td:nth-child(2) > div.wrapper-info {
+  color: white;
+  font-weight: bold;
   background-color: #009dd9; }
-  #program tr.impreza td span, #program tr.impreza td div {
-    background-color: #009dd9; }
 #program p {
   margin-top: 30px; }
 #program div.description {
@@ -623,15 +623,16 @@ footer {
   border-top: 1px solid #e5e5e5;
   display: none; }
 #program .toggle {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none; }
-  #program .toggle:before {
-    content: 'zobacz szczegóły'; }
-  #program .toggle:checked:before {
-    content: 'ukryj szczegóły'; }
-  #program .toggle:checked ~ .description {
-    display: block; }
+  background-image: url(../assets/arrows.png);
+  width: 18px;
+  height: 9px;
+  display: inline-block;
+  background-position: 0px -9px; }
+  #program .toggle.active {
+    background-position: 0px 0px; }
+#program #map-canvas {
+  height: 300px;
+  visibility: hidden; }
 #program button.showMore {
   border: 0;
   background-color: white;

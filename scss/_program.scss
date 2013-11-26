@@ -19,7 +19,7 @@
     }
   }
 
-  tr td span, tr td div:first-child {
+  tr td span, tr td div.wrapper-info {
     background-color: white;
     display: inline-block;
     width: 100%;
@@ -30,20 +30,26 @@
   }
 
   tr td:first-child span,
-  tr td:nth-child(2) div:first-child {
+  tr td:nth-child(2) div.wrapper-info {
     border: 1px solid $nav_border;
     padding: 15px;
   }
 
   tr.highlight td {
+    color: white;
     background-color: $wud_orange;
-    span, div {
+    span, div.wrapper-info {
       background-color: $wud_orange;
     }
   }
 
+  tr.highlight td.wrapper-info {
+      padding-left: 15px;
+    }
+
+
   tr.highlight td,
-  tr.impreza td{
+  tr.impreza td > div.wrapper-info {
     vertical-align: middle;
     border: 0;
     color: white;
@@ -54,17 +60,18 @@
     td span {
       border: 0;
     }
-
-    td:nth-child(2) {
-      padding-left: 15px;
-    }
   }
 
-  tr.impreza td {
-    background-color: $wud_blue;
-    span, div {
+  tr.impreza {
+    
+    td:first-child span, td:nth-child(2) > div.wrapper-info {
+    
+      color: white;
+      font-weight: bold;
       background-color: $wud_blue;
+    
     }
+
   }
 
   p {
@@ -81,22 +88,21 @@
   }
 
   .toggle {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    background-image: url(../assets/arrows.png);
+    width: 18px;
+    height: 9px;
+    display: inline-block;
+    background-position: 0px -9px;
 
-
-    &:before {
-      content: 'zobacz szczegóły';
+    &.active {
+      background-position: 0px 0px;
     }
+  }
 
-    &:checked:before {
-      content: 'ukryj szczegóły';
-    }
-
-    &:checked ~ .description {
-      display: block;
-    }
+  #map-canvas {
+    height: 300px;
+    //display: none;
+    visibility: hidden;
   }
 
   button.showMore {
