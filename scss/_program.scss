@@ -42,6 +42,11 @@
       background-color: $wud_orange;
     }
   }
+  
+  tr.highlight td:nth-child(2),
+  tr.impreza td.wrapper-info{
+      padding-left: 15px;
+  }
 
   tr.highlight td.wrapper-info {
       padding-left: 15px;
@@ -93,6 +98,9 @@
     height: 9px;
     display: inline-block;
     background-position: 0px -9px;
+
+    margin-top: 8px;
+    cursor: pointer;
 
     &.active {
       background-position: 0px 0px;

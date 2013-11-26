@@ -65,6 +65,20 @@ section {
   background-image: url(../assets/kratka.png);
 }
 
+.orange {
+    display: block;
+    text-align:center;
+    font-size: 20px;
+    padding: 5px 13px;
+    background-color: $wud_orange;
+    color: white;
+}
+
+.orange:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .register {
   font-size: 20px;
   border-top: 1px solid $nav_border;

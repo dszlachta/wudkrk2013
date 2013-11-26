@@ -210,13 +210,6 @@
     @media (min-width: 768px) {
       #info aside .registration {
         text-align: left; } }
-  #info aside .orange {
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    padding: 5px 13px;
-    background-color: #fe6521;
-    color: white; }
 
 #info .description {
   font-size: 20px; }
@@ -600,6 +593,9 @@ footer {
   background-color: #fe6521; }
   #program tr.highlight td span, #program tr.highlight td div.wrapper-info {
     background-color: #fe6521; }
+#program tr.highlight td:nth-child(2),
+#program tr.impreza td.wrapper-info {
+  padding-left: 15px; }
 #program tr.highlight td.wrapper-info {
   padding-left: 15px; }
 #program tr.highlight td,
@@ -627,7 +623,9 @@ footer {
   width: 18px;
   height: 9px;
   display: inline-block;
-  background-position: 0px -9px; }
+  background-position: 0px -9px;
+  margin-top: 8px;
+  cursor: pointer; }
   #program .toggle.active {
     background-position: 0px 0px; }
 #program #map-canvas {
@@ -675,6 +673,8 @@ footer {
     #warsztaty section .wrapper .name b, #warsztaty section .wrapper .time span {
       margin-top: 5px;
       display: block; }
+#warsztaty .orange {
+  margin-top: 20px; }
 
 body {
   background-color: white; }
@@ -715,6 +715,18 @@ section {
 #program,
 #prelegenci {
   background-image: url(../assets/kratka.png); }
+
+.orange {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px 13px;
+  background-color: #fe6521;
+  color: white; }
+
+.orange:hover {
+  color: white;
+  text-decoration: none; }
 
 .register {
   font-size: 20px;
